@@ -7,7 +7,11 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <img src="img/index-logo.svg" width=50 height=50 alt="City of Sedona logo">
+        <!-- в прошлый раз не заметил. тут должна быть ссылка, но бех хрефа
+        <a class='...'> 
+          <img src="img/index-logo.svg" width=50 height=50 alt="City of Sedona logo">
+        </a>
+        -->
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
@@ -17,11 +21,19 @@
       </nav>
     </header>
     <main>
-      <img src="img/background.svg" width= height= alt="Welcome to the gorgeous Sedona!">
-      <h1 class="visually-hidden">City of Sedona</h1>
+      <!-- 
+        section.splash 
+          <img src="img/background.svg" width= height= alt="Welcome to the gorgeous Sedona!">
+          <h1 class="visually-hidden">City of Sedona</h1>
+        /section
+
+      сама секция будет иметь фон гор, а те красивые надписи будут картинкой, которые типа уже вставлены у тебя через img
+      -->
+      <!-- newsection.class...
       <h2>Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-
+          end of new section
+      -->
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
@@ -34,6 +46,8 @@
             <div class="feature-item-logo">
               <img src="img/farm.svg" width=50 height=50 alt="farm">
             </div>
+     <!-- </li> -->
+     <!-- <li> -->
               <ul class="city-features">
                 <li class="city-feature">
                   <div class="city-feature-description">
@@ -63,7 +77,7 @@
                   </div>
                 </li>
               </ul>
-            </li>
+        <!-- </li> -->   
               <li class="feature-item">
                 <div class="feature-item-logo">
                   <img src="img/canyon.svg" width=50 height=50 alt="canyon">
@@ -74,39 +88,51 @@
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
               </li>
-              <li class="feature-item">
-                <div class="feature-item-description">
-                  <h3>Небольшая площадь</h3>
-                  <span>№3</span>
-                  <p>Все достопримечательности находятся очень близко</p>
-                </div>
-
-              </li>
-              <li class="feature-item">
-                <div class="feature-item-description">
-                  <h3>Красивая дорога</h3>
-                  <span>№4</span>
-                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </div>
-
-              </li>
-              <li class="feature-item">
-                <div class="feature-item-description">
-                  <h3>Мало туристов</h3>
-                  <span>№5</span>
-                  <p>Большинство едет в Гранд Каньон и толпится там</p>
-                </div>
-
-              </li>
-
+         <!-- <li> -->        
+                <!-- <ul> -->
+                       <li class="feature-item">
+                          <div class="feature-item-description">
+                            <h3>Небольшая площадь</h3>
+                            <span>№3</span>
+                            <p>Все достопримечательности находятся очень близко</p>
+                          </div>
+                        </li>
+                        <li class="feature-item">
+                          <div class="feature-item-description">
+                            <h3>Красивая дорога</h3>
+                            <span>№4</span>
+                            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                          </div>
+                        </li>
+                        <li class="feature-item">
+                          <div class="feature-item-description">
+                            <h3>Мало туристов</h3>
+                            <span>№5</span>
+                            <p>Большинство едет в Гранд Каньон и толпится там</p>
+                          </div>
+                        </li>
+                <!-- </ul> -->>  
+        <!-- </li> --->
         </ul>
       </section>
       <section class="appointment">
          <h2>Заинтересовались?</h2>
          <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
          <p class="appointment-headline">
+           <!-- это кнорка, а точнее ссылка -->
            Поиск гостиницы в Седоне
          </p>
+         <!-- form -->
+         <!-- Форма неокончена.
+         пример вертски "дата заезда"
+        
+         <div>
+          <label>Взросые:</label>
+          <input type='text'>
+          будет еще календарик, но позже
+         </div>
+          
+        
          <div class="appointment-date">
            <p>Дата заезда:<p>
             <p>Дата Выезда:<p>
@@ -116,7 +142,9 @@
            <p>Дети:</p>
          </div>
          <a class="button" href="catalog.html">Найти</a>
-         </section>
+         <!-- /form -->
+      </section>
+        
          <!--здесь будет карта-->
 
     </main>
