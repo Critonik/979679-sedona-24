@@ -20,7 +20,7 @@
     </header>
     <main>
       <section class="splash">
-          <img src="img/welcome.png" width="459" height="353" alt="Welcome to the gorgeous Sedona!">
+          <img src="img/welcome.png" width="459" height="353" alt="Welcome to the Gorgeous Sedona!">
           <h1 class="visually-hidden">City of Sedona</h1>
       </section>
       <section class="caption">
@@ -114,17 +114,22 @@
          <div class="appointment-headline">
            <a class="fing-button" href="#">Поиск гостиницы в Седоне</a>
          </div>
-
+         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
          <div class="appointment-date">
           <div class="arrival">
-           <label>Дата заезда:</label>
-            <input type='text'>
-            <!--календарь-->
+             <label for="appointment-date">Дата заезда</label>
+            <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+            <a class="calendar" href="#">
+             <img src="img/calendar.png" width="21" height="22" alt="Календарь для выбора даты заезда">
+           </a>
           </div>
+
           <div class="departure">
-            <label>Дата Выезда:</label>
-            <input type='text'>
-            <!--календарь-->
+            <label for="departure-date">Дата заезда</label>
+           <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
+           <a class="calendar" href=#>
+            <img src="img/calendar.png" width="21" height="22" alt="Календарь для выбора даты выезда">
+          </a>
           </div>
          </div>
 
@@ -138,12 +143,19 @@
             <!--счетчик-->
          </div>
         </div>
-
-         <a class="button" href="catalog.html">Найти</a>
-
+        <button class="button" type="submit">Найти</button>
+       </form>
       </section>
       <section class="map">
-        <!--здесь будет карта-->
+        <h2 class="visually-hidden">
+          Как до нас добраться
+        </h2>
+        <div>
+          <img src="img/map.jpg" width="780" height="560" alt="179 миля Хайвея №17">
+        </div>
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
       </section>
 
 
@@ -161,7 +173,7 @@
       </div>
       <p class="footer-copyright">
         <b>WEBSITE BY</b>
-        <a class="button" href="https://htmlacademy.ru"><img src="img/HTMLAcademy.svg" width="115" height="41" alt="HTML Academy"></a>
+        <a class="copyright" href="https://htmlacademy.ru"><img src="img/HTMLAcademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
     </footer>
   </body>
