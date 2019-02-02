@@ -112,7 +112,7 @@
          <h2>Заинтересовались?</h2>
          <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
          <div class="appointment-headline">
-           <a class="fing-button" href="#">Поиск гостиницы в Седоне</a>
+           <a class="find" href="#">Поиск гостиницы в Седоне</a>
          </div>
          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
          <div class="appointment-date">
@@ -135,12 +135,16 @@
 
          <div class="people-amount">
           <div class="adult">
-            <label>Взрослые:</label>
-            <!--счетчик-->
+            <label for="adult">Взрослые:</label>
+              <button class="counter" type="button">+</button>
+              <input type="number" id="adult" name="count" value="2">
+              <button class="counter" type="button">-</button>
           </div>
           <div class="child">
-            <label>Дети:</label>
-            <!--счетчик-->
+            <label for="child">Дети:</label>
+              <button class="counter" type="button">+</button>
+              <input type="number" id="child" name="count" value="2">
+              <button class="counter" type="button">-</button>
          </div>
         </div>
         <button class="button" type="submit">Найти</button>
