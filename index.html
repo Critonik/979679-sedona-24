@@ -10,7 +10,7 @@
         <a class="main-logo">
           <img src="img/logo.svg" width="140" height="71" alt="City of Sedona">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation" aria-label="Навигация по сайту">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="mapofstate.html">Карта штата</a></li>
@@ -31,13 +31,13 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
           <li class="feature-item">
-            <div class="feature-item-description">
+            <div class="feature-item-description" aria-label="Список преимуществ">
               <h3>Настоящий городок</h3>
               <span>№1</span>
               <p>Седона - не аттакцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="feature-item-logo">
-              <img src="img/farm.jpg" width="800" height="256" alt="farm">
+              <img src="img/farm.jpg" width="800" height="256" alt="Изображение фермы">
             </div>
           </li>
           <li>
@@ -48,7 +48,7 @@
                     <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
                   </div>
                   <div class="city-feature-logo">
-                      <img src="img/house.svg" width="75" height="72" alt="house">
+                      <img src="img/house.svg" width="75" height="72" alt="Дом для проживания в Седоне">
                   </div>
                 </li>
                 <li class="city-feature">
@@ -57,7 +57,7 @@
                     <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                   </div>
                   <div class="city-feature-logo">
-                    <img src="img/burger.svg" width="74" height="70" alt="burger">
+                    <img src="img/burger.svg" width="74" height="70" alt="Бургер">
                   </div>
                 </li>
                 <li class="city-feature">
@@ -66,14 +66,14 @@
                     <p>Не только китайского, но и местного производства!</p>
                   </div>
                   <div class="city-feature-logo">
-                    <img src="img/gift.svg" width="64" height="76" alt="gift">
+                    <img src="img/gift.svg" width="64" height="76" alt="Изображение сувенира">
                   </div>
                 </li>
               </ul>
             </li>
               <li class="feature-item">
                 <div class="feature-item-logo">
-                  <img src="img/canyon.jpg" width="800" height="256" alt="canyon">
+                  <img src="img/canyon.jpg" width="800" height="256" alt="Изображение каньона">
                 </div>
                 <div class="feature-item-description">
                   <h3>Там есть мост дьявола</h3>
@@ -108,7 +108,7 @@
               </li>
         </ul>
       </section>
-      <section class="appointment">
+      <section class="appointment" aria-label="Форма поиска гостиниц">
          <h2>Заинтересовались?</h2>
          <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
          <div class="appointment-headline">
@@ -116,47 +116,41 @@
          </div>
          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
          <div class="appointment-date">
-          <div class="arrival">
+          <div class="arrival" aria-label="Прибытие">
              <label for="appointment-date">Дата заезда</label>
             <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017">
-            <a class="calendar" href="#">
-             <img src="img/calendar.png" width="21" height="22" alt="Календарь для выбора даты заезда">
-           </a>
+            <a class="calendar" href="#" aria-label="Календарь для выбора даты заезда"></a>
           </div>
 
           <div class="departure">
             <label for="departure-date">Дата заезда</label>
            <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
-           <a class="calendar" href=#>
-            <img src="img/calendar.png" width="21" height="22" alt="Календарь для выбора даты выезда">
-          </a>
+           <a class="calendar" href=# aria-label="Календарь для выбора даты выезда"></a>
           </div>
          </div>
 
-         <div class="people-amount">
+         <div class="people-amount" aria-label="Количество приезжающих гостей">
           <div class="adult">
             <label for="adult">Взрослые:</label>
-              <button class="counter" type="button">+</button>
+              <button class="counter" type="button" aria-label="Кнопка плюс">+</button>
               <input type="number" id="adult" name="count" value="2">
-              <button class="counter" type="button">-</button>
+              <button class="counter" type="button" aria-label="Кнопка минус">-</button>
           </div>
           <div class="child">
             <label for="child">Дети:</label>
-              <button class="counter" type="button">+</button>
+              <button class="counter" type="button" aria-label="Кнопка плюс">+</button>
               <input type="number" id="child" name="count" value="2">
-              <button class="counter" type="button">-</button>
+              <button class="counter" type="button" aria-label="Кнопка минус">-</button>
          </div>
         </div>
-        <button class="button" type="submit">Найти</button>
+        <button class="button" type="submit" aria-label="Кнопка найти">Найти</button>
        </form>
       </section>
       <section class="map">
         <h2 class="visually-hidden">
           Как до нас добраться
         </h2>
-        <div>
-          <img src="img/map.jpg" width="780" height="560" alt="179 миля Хайвея №17">
-        </div>
+        <div class="image-map" aria-label="179 миля Хайвея №17"></div>
         <button class="modal-close" type="button">
           Закрыть
         </button>
