@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo">
-          <img src="img/logo.svg" width="140" height="71" alt="City of Sedona">
+          <img src="img/logo.svg" width="140" height="71" alt="City of Sedona" aria-label="Логотип Седоны">
         </a>
         <ul class="site-navigation" aria-label="Навигация по сайту">
           <li><a href="info.html">Информация</a></li>
@@ -20,7 +20,7 @@
     </header>
     <main>
       <section class="splash">
-          <img src="img/welcome.png" width="459" height="353" alt="Welcome to the Gorgeous Sedona!">
+          <img src="img/welcome.png" width="459" height="353" aria-label="Добро пожаловать в Величественную Седону!" alt="Welcome to the Gorgeous Sedona!">
           <h1 class="visually-hidden">City of Sedona</h1>
       </section>
       <section class="caption">
@@ -30,8 +30,8 @@
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
-          <li class="feature-item">
-            <div class="feature-item-description" aria-label="Список преимуществ">
+          <li class="feature-item"aria-label="Список преимуществ">
+            <div class="feature-item-description">
               <h3>Настоящий городок</h3>
               <span>№1</span>
               <p>Седона - не аттакцион для туристов, там течет своя жизнь</p>
@@ -43,7 +43,7 @@
           <li>
               <ul class="city-features">
                 <li class="city-feature">
-                  <div class="city-feature-description">
+                  <div class="city-feature-description" aria-label="Преимущество Седоны">
                     <h3>Жильё</h3>
                     <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
                   </div>
@@ -52,7 +52,7 @@
                   </div>
                 </li>
                 <li class="city-feature">
-                  <div class="city-feature-description">
+                  <div class="city-feature-description" aria-label="Преимущество Седоны">
                     <h3>Еда</h3>
                     <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                   </div>
@@ -61,7 +61,7 @@
                   </div>
                 </li>
                 <li class="city-feature">
-                  <div class="city-feature-description">
+                  <div class="city-feature-description" aria-label="Преимущество Седоны">
                     <h3>Сувениры</h3>
                     <p>Не только китайского, но и местного производства!</p>
                   </div>
@@ -118,13 +118,13 @@
          <div class="appointment-date">
           <div class="arrival" aria-label="Прибытие">
              <label for="appointment-date">Дата заезда</label>
-            <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+            <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017" aria-label="Строка ввода даты заезда">
             <a class="calendar" href="#" aria-label="Календарь для выбора даты заезда"></a>
           </div>
 
           <div class="departure">
             <label for="departure-date">Дата заезда</label>
-           <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
+           <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017" aria-label="Строка ввода даты выезда">
            <a class="calendar" href=# aria-label="Календарь для выбора даты выезда"></a>
           </div>
          </div>
@@ -133,13 +133,13 @@
           <div class="adult">
             <label for="adult">Взрослые:</label>
               <button class="counter" type="button" aria-label="Кнопка плюс">+</button>
-              <input type="number" id="adult" name="count" value="2">
+              <input type="number" id="adult" name="count" value="2" aria-label="Строка ввода количества взрослых">
               <button class="counter" type="button" aria-label="Кнопка минус">-</button>
           </div>
           <div class="child">
             <label for="child">Дети:</label>
               <button class="counter" type="button" aria-label="Кнопка плюс">+</button>
-              <input type="number" id="child" name="count" value="2">
+              <input type="number" id="child" name="count" value="2" aria-label="Строка ввода количества взрослых">
               <button class="counter" type="button" aria-label="Кнопка минус">-</button>
          </div>
         </div>
@@ -151,7 +151,7 @@
           Как до нас добраться
         </h2>
         <div class="image-map" aria-label="179 миля Хайвея №17"></div>
-        <button class="modal-close" type="button">
+        <button class="modal-close" type="button" aria-label="Кнопка закрыть карту">
           Закрыть
         </button>
       </section>
@@ -159,19 +159,19 @@
 
     </main>
     <footer class="main-footer">
-      <p class="footer-contacts">
+      <p class="footer-contacts" aria-label="Хэштег VISITSEDONA">
         #VISITSEDONA
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="17" height="15" alt="Facebook"></a></li>
-          <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTuBe"></a></li>
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter" aria-label="Ссылка на Твиттер Седоны"></a></li>
+          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="17" height="15" alt="Facebook" aria-label="Ссылка на Фейсбук Седоны"></a></li>
+          <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTuBe" aria-label="Ссылка на Ютуб-канал Седоны"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>WEBSITE BY</b>
-        <a class="copyright" href="https://htmlacademy.ru"><img src="img/HTMLAcademy.svg" width="115" height="41" alt="HTML Academy"></a>
+        <a class="copyright" href="https://htmlacademy.ru"><img src="img/HTMLAcademy.svg" width="115" height="41" alt="HTML Academy" aria-label="Ссылка на сайт разработчика - HTML Academy"></a>
       </p>
     </footer>
   </body>
