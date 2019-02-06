@@ -155,7 +155,7 @@ a {
 }
 
 .arrival input:hover{
-  background-color:##ffffff;
+  background-color: #ffffff;
 }
 
 .arrival input:focus{
@@ -192,7 +192,7 @@ a {
 }
 
 .departure input:hover{
-  background-color:##ffffff;
+  background-color: #ffffff;
 }
 
 .departure input:focus{
@@ -219,8 +219,8 @@ a {
   background-color: #669ec0;
 }
 .button:active{
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd
-  color:rgba(255, 255, 255, 0.3);
 }
 
 
