@@ -41,7 +41,14 @@ a {
   color: #000000;
 }
 .splash{
-  background-image: url("img/bg.jpg"); /*не подключается никак*/
+  background-image: url("../img/bg.jpg");
+}
+
+.splash img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .caption{
@@ -85,18 +92,18 @@ a {
 .city-columns {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("img/whiteback.jpg");
+  background-image: url("../img/whiteback.jpg");
 
 }
 .city-columns p{
   font-weight: normal;
 }
 .feature-item-description{
-  background-image: url("img/graybackground.jpg");
+  background-image: url("../img/graybackground.jpg");
   background-color: #eeeeee;
 }
 .special-color{
-  background-image: url("img/bluebackground.jpg");
+  background-image: url("../img/bluebackground.jpg");
   background-color: #81b3d2;
 }
 .appointment h2{
@@ -164,16 +171,16 @@ a {
 
 
 .calendar a{
-  background-image: url("img/calendar.svg");
+  background-image: url("../img/calendar.svg");
   width: 21px;
   height: 22px;
   background-color: #cacaca;
 }
 .calendar a:hover{
-  background-image: url("img/calendarhover.svg");
+  background-image: url("../img/calendarhover.svg");
 }
 .calendar a:active{
-  background-image: url("img/calendaractive.svg");
+  background-image: url("../img/calendaractive.svg");
 }
 
 .departure label{
