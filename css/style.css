@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+
+}
+
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: #000000;
+}
+.splash{
+  background-image: url("img/bg.jpg"); /*не подключается никак*/
+}
+
+.caption{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.caption p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: #333333;
+}
+
+
+.features-list,
+.city-features {
+  list-style: none;
+}
+.feature-item,
+.city-features {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+
+.special-color h3 {
+  color: #ffffff;
+
+}
+.city-columns {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("img/whiteback.jpg");
+
+}
+.city-columns p{
+  font-weight: normal;
+}
+.feature-item-description{
+  background-image: url("img/graybackground.jpg");
+  background-color: #eeeeee;
+}
+.special-color{
+  background-image: url("img/bluebackground.jpg");
+  background-color: #81b3d2;
+}
+.appointment h2{
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+.appointment p{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  background-color: #ffffff;
+}
+.appointment-headline {
+
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #766357;
+}
+.appointment-headline a{
+  color: #ffffff;
+}
+.appointment-headline a:hover{
+  background-color: #604e43;
+}
+.appointment-headline a:active{
+  background-color: #503e33;
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.appointment-form {
+  background-color: #ffffff;
+}
+.arrival label{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 26px;
+  text-align: left;
+}
+.arrival input{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.arrival input:hover{
+  background-color:##ffffff;
+}
+
+.arrival input:focus{
+  background-color:#ebebeb;
+}
+
+
+.calendar a{
+  background-image: url("img/calendar.svg");
+  width: 21px;
+  height: 22px;
+  background-color: #cacaca;
+}
+.calendar a:hover{
+  background-image: url("img/calendarhover.svg");
+}
+.calendar a:active{
+  background-image: url("img/calendaractive.svg");
+}
+
+.departure label{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 26px;
+  text-align: left;
+}
+.departure input{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.departure input:hover{
+  background-color:##ffffff;
+}
+
+.departure input:focus{
+  background-color:#ebebeb;
+}
+
+.counter {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+.button{
+  font-family: PTSans;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+}
+
+.button:hover{
+  background-color: #669ec0;
+}
+.button:active{
+  background-color: #5496bd
+  color:rgba(255, 255, 255, 0.3);
+}
+
+
+.main-footer {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts{
+  width: 136px;
+  height: 16px;
+  font-family: PTSans;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.social-button img{
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+.social-button:hover {
+  background-color: #669ec0;
+}
+.social-button:active{
+  background-color: #5496bd
+}
+
+.footer-copyright b{
+  width: 74px;
+  height: 11px;
+
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 26px;
+}
+.footer-copyright img{
+    width: 115px;
+    height: 41px;
+    object-fit: contain;
+    background-color: #231f20;
+}
+.footer-copyright img:hover{
+  background-color: #81b3d2;
+}
+.footer-copyright img:active{
+  background-color: #bdbbbc;
+}

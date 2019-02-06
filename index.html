@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -31,7 +34,7 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
           <li class="feature-item"aria-label="Список преимуществ">
-            <div class="feature-item-description">
+            <div class="feature-item-description special-color">
               <h3>Настоящий городок</h3>
               <span>№1</span>
               <p>Седона - не аттакцион для туристов, там течет своя жизнь</p>
@@ -41,6 +44,7 @@
             </div>
           </li>
           <li>
+            <div class="city-columns">
               <ul class="city-features">
                 <li class="city-feature">
                   <div class="city-feature-description" aria-label="Преимущество Седоны">
@@ -69,20 +73,22 @@
                     <img src="img/gift.svg" width="64" height="76" alt="Изображение сувенира">
                   </div>
                 </li>
+              </div>
               </ul>
             </li>
+            <ul class="city-features">
               <li class="feature-item">
                 <div class="feature-item-logo">
                   <img src="img/canyon.jpg" width="800" height="256" alt="Изображение каньона">
                 </div>
-                <div class="feature-item-description">
+
+                <div class="feature-item-description special-color">
                   <h3>Там есть мост дьявола</h3>
                   <span>№2</span>
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
               </li>
               <li>
-                  <ul>
                        <li class="feature-item">
                           <div class="feature-item-description">
                             <h3>Небольшая площадь</h3>
@@ -123,7 +129,7 @@
           </div>
 
           <div class="departure">
-            <label for="departure-date">Дата заезда</label>
+            <label for="departure-date">Дата выезда</label>
            <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017" aria-label="Строка ввода даты выезда">
            <a class="calendar" href=# aria-label="Календарь для выбора даты выезда"></a>
           </div>
