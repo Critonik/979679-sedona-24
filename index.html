@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo">
-          <img src="img/logo.svg" width="140" height="71" alt="City of Sedona" aria-label="Логотип Седоны">
+          <img src="img/logo.svg" width="140" height="71" alt="City of Sedona">
         </a>
         <ul class="site-navigation" aria-label="Навигация по сайту">
           <li><a href="info.html">Информация</a></li>
@@ -23,7 +23,7 @@
     </header>
     <main>
       <section class="splash">
-          <img src="img/welcome.png" width="459" height="353" aria-label="Добро пожаловать в Величественную Седону!" alt="Welcome to the Gorgeous Sedona!">
+          <img src="img/welcome.png" width="459" height="353" alt="Welcome to the Gorgeous Sedona!">
           <h1 class="visually-hidden">City of Sedona</h1>
       </section>
       <section class="caption">
@@ -44,7 +44,6 @@
             </div>
           </li>
           <li>
-            <div class="city-columns">
               <ul class="city-features">
                 <li class="city-feature">
                   <div class="city-feature-description" aria-label="Преимущество Седоны">
@@ -74,9 +73,7 @@
                   </div>
                 </li>
               </ul>
-            </div>
           </li>
-
               <li class="feature-item">
                 <div class="feature-item-logo">
                   <img src="img/canyon.jpg" width="800" height="256" alt="Изображение каньона">
@@ -89,47 +86,46 @@
                 </div>
               </li>
                 <li class="feature-item">
-                          <div class="feature-item-description">
-                            <h3>Небольшая площадь</h3>
-                            <span>-№3-</span>
-                            <p>Все достопримечательности находятся очень близко</p>
-                          </div>
-                  </li>
-                        <li class="feature-item">
-                          <div class="feature-item-description">
-                            <h3>Красивая дорога</h3>
-                            <span>-№4-</span>
-                            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                          </div>
-                        </li>
-                        <li class="feature-item">
-                          <div class="feature-item-description">
-                            <h3>Мало туристов</h3>
-                            <span>-№5-  </span>
-                            <p>Большинство едет в Гранд Каньон и толпится там</p>
-                          </div>
-                        </li>
-
+                  <div class="feature-item-description">
+                      <h3>Небольшая площадь</h3>
+                      <span>-№3-</span>
+                      <p>Все достопримечательности находятся очень близко</p>
+                  </div>
+                </li>
+                <li class="feature-item">
+                    <div class="feature-item-description">
+                      <h3>Красивая дорога</h3>
+                      <span>-№4-</span>
+                      <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </div>
+                </li>
+                <li class="feature-item">
+                  <div class="feature-item-description">
+                    <h3>Мало туристов</h3>
+                    <span>-№5-</span>
+                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                  </div>
+                </li>
         </ul>
       </section>
-      <section class="appointment" aria-label="Форма поиска гостиниц">
+      <section class="appointment">
          <h2>Заинтересовались?</h2>
          <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
          <div class="appointment-headline">
            <a class="find" href="#">Поиск гостиницы в Седоне</a>
          </div>
-         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма поиска гостиниц">
          <div class="appointment-date">
           <div class="arrival" aria-label="Прибытие">
              <label for="appointment-date">Дата заезда</label>
             <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017" aria-label="Строка ввода даты заезда">
-            <a class="calendar" href="#" aria-label="Календарь для выбора даты заезда"></a>
+            <button class="calendar" aria-label="Календарь для выбора даты заезда"></button> <!--Поменять цвет в текстовом редакторе-->
           </div>
 
           <div class="departure">
             <label for="departure-date">Дата выезда</label>
            <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017" aria-label="Строка ввода даты выезда">
-           <a class="calendar" href=# aria-label="Календарь для выбора даты выезда"></a>
+           <button class="calendar" aria-label="Календарь для выбора даты выезда"></button>
           </div>
          </div>
 
@@ -166,11 +162,11 @@
       <p class="footer-contacts" aria-label="Хэштег VISITSEDONA">
         #VISITSEDONA
       </p>
-      <div class="footer-social">
+      <div class="folioter-social">
         <ul>
-          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter" aria-label="Ссылка на Твиттер Седоны"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="17" height="15" alt="Facebook" aria-label="Ссылка на Фейсбук Седоны"></a></li>
-          <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTuBe" aria-label="Ссылка на Ютуб-канал Седоны"></a></li>
+          <li><a class="social-button" href="#" aria-label="Ссылка на Твиттер Седоны"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+          <li><a class="social-button" href="#" aria-label="Ссылка на Фейсбук Седоны"><img src="img/fb-icon.svg" width="17" height="15" alt="Facebook"></a></li>
+          <li><a class="social-button" href="#" aria-label="Ссылка на Ютуб-канал Седоны"><img src="img/youtube.svg" width="20" height="16" alt="YouTuBe"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
