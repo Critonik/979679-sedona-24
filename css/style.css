@@ -22,8 +22,28 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  margin-bottom: 61px;
+}
+
+.main-navigation {
+  min-height: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-logo {
+  width: 140px;
+  height: 71px;
+  /*Нужно ли задавать ордер для центровки, либо другими инструментами отцентруем?*/
+}
+
 .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  min-width: 1200px;
 }
 
 .site-navigation a {
@@ -58,15 +78,28 @@ a {
   color: #333333;
 }
 
-
-.features-list,
-.city-features {
+.features-list {
+  min-height: 260px;
   list-style: none;
 }
 
-.feature-item,
-.city-features {
+.feature-item {
   text-align: center;
+  width: 400px;
+}
+/*Не совсем понял как сделать сетку для этих блоков */
+.city-features {
+  list-style: none;
+  min-height: 330px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.city-feature {
+  text-align: center;
+  width: 400px;
 }
 
 .feature-item h3 {
@@ -260,6 +293,15 @@ a {
   color: #88b6d1;
 }
 
+.hotels {
+  min-height: 453px;
+  width: 1056px;
+}
+
+.hotels ul {
+  list-style: none;
+}
+
 .hotel-order .button {
   font-size: 14px;
   line-height: 21px;
@@ -276,6 +318,20 @@ a {
   color: #857871;
 }
 
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.hotel-card {
+  width: 1056px;
+  min-height: 154px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .hotel-card b {
   font-size: 14px;
   font-weight: normal;
@@ -287,14 +343,20 @@ a {
   background-color: #f2f2f2;
 }
 
-
 .main-footer {
   color: #000000;
   background-color: #ffffff;
+  min-height: 122px;
+  margin-top: 79px;
+  padding: 50px 0;
+}
+
+.main-footer .container {
+  display: flex;
 }
 
 .footer-contacts {
-  width: 136px;
+  width: 137px;
   height: 16px;
   font-size: 21px;
   font-style: normal;
@@ -302,6 +364,8 @@ a {
   line-height: 26px;
   letter-spacing: normal;
   text-align: center;
+  margin: 0;
+  margin-right: 256px;
 }
 
 .social-button img {
@@ -311,6 +375,12 @@ a {
 }
 
 .footer-social {
+  width: 150px;
+  list-style: none;
+  margin: 0;
+}
+
+.footer-social ul {
   list-style: none;
 }
 
@@ -320,6 +390,12 @@ a {
 
 .social-button:active {
   background-color: #5496bd
+}
+
+.footer-copyright {
+  margin: 0;
+  width: 157px;
+  margin-left: auto;
 }
 
 .footer-copyright b {
@@ -332,10 +408,10 @@ a {
 }
 
 .footer-copyright img {
-    width: 115px;
-    height: 41px;
-    object-fit: contain;
-    background-color: #231f20;
+  width: 115px;
+  height: 41px;
+  object-fit: contain;
+  background-color: #231f20;
 }
 
 .footer-copyright img:hover {
