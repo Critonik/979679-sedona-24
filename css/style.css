@@ -18,6 +18,11 @@ body {
   margin: -1px;
 }
 
+.center {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,23 +32,22 @@ a {
 }
 
 .main-navigation {
-  min-height: 71px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .main-logo {
   width: 140px;
   height: 71px;
-  /*Нужно ли задавать ордер для центровки, либо другими инструментами отцентруем?*/
+  position: absolute;
+  margin: auto;
 }
 
 .site-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
-  min-width: 1200px;
 }
 
 .site-navigation a {
@@ -79,22 +83,30 @@ a {
 }
 
 .features-list {
-  min-height: 260px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .feature-item {
-  text-align: center;
-  width: 400px;
-}
-/*Не совсем понял как сделать сетку для этих блоков */
-.city-features {
-  list-style: none;
-  min-height: 330px;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+
+.feature-item-description {
+  text-align: center;
+  width: 400px;
+  background-color: #eeeeee;
+}
+
+.city-features {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .city-feature {
@@ -133,11 +145,6 @@ a {
   color: #ffffff;
 }
 
-.city-features {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .city-features h3 {
   font-size: 21px;
   line-height: 21px;
@@ -149,12 +156,21 @@ a {
   line-height: 21px;
 }
 
-.feature-item-description {
-  background-color: #eeeeee;
-}
-
 .special-color {
   background-color: #81b3d2;
+}
+
+.index-columns {
+  display: flex;
+}
+
+.index-columns {
+  width: 162px;
+  margin-bottom: 79px;
+  padding-left: 57px;
+  padding-right: 60px;
+  padding-top: 54px;
+  padding-bottom: 60px;
 }
 
 .appointment h2 {
@@ -181,6 +197,7 @@ a {
   text-align: center;
   color: #ffffff;
   background-color: #766357;
+  width: 162px;
 }
 
 .appointment-headline a {
@@ -293,10 +310,6 @@ a {
   color: #88b6d1;
 }
 
-.hotels {
-  min-height: 453px;
-  width: 1056px;
-}
 
 .hotels ul {
   list-style: none;
@@ -411,7 +424,6 @@ a {
   width: 115px;
   height: 41px;
   object-fit: contain;
-  background-color: #231f20;
 }
 
 .footer-copyright img:hover {
