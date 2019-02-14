@@ -8,20 +8,21 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="img/logo.svg" width="140" height="71" alt="City of Sedona" aria-label="Логотип Седоны">
-        </a>
-        <ul class="site-navigation" aria-label="Навигация по сайту">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="mapofstate.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
+    <div class="center">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-logo">
+            <img src="img/logo.svg" width="140" height="71" alt="City of Sedona">
+          </a>
+          <ul class="site-navigation" aria-label="Навигация по сайту">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="media.html">Фото и видео</a></li>
+            <li class=><a href="mapofstate.html">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
       <h1 class="visually-hidden">Отели</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
@@ -35,17 +36,19 @@
               <div class="hotel-image">
                     <img src="img/hotel-1.jpg" width="135" height="90" alt="ОТЕЛЬ AMARA RESORT & SPA">
               </div>
-              <div>
+                <div class="block">
                 <h3>AMARA RESORT & SPA</h3> <!--в Стайлгайде на названиях отелей есть hover и active - переделываем под ссылки, вместо заголовков?-->
+
                 <div class="hotel-type" aria-label="Тип отеля">
                   <b>ГОСТИНИЦА</b>
-                  <a class="button-order" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
+                  <b>ОТ 4000 Р.</b>
+
                 </div>
                 <div class="hotel-order">
-                  <b>ОТ 4000 Р.</b>
-                  <a class="button" href="#" aria-label="кнопка Забронировать">ЗАБРОНИРОВАТЬ</a>
+                  <a class="button-order" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
+                  <a class="booking-button" href="#" aria-label="кнопка Забронировать">ЗАБРОНИРОВАТЬ</a>
                 </div>
-              </div>
+                </div>
               <div class="hotel-rating" aria-label="Рейтинг отеля в количестве звезд">
                   <ul class="hotel-star">
                     <li><img src="img/hotel-star.svg" width="18" height="17" alt="Звезда"></li>
@@ -60,18 +63,20 @@
 
           <li class="catalog-item">
             <div class="hotel-card">
-              <h3>DESERT QUIAL INN</h3>
                 <div class="hotel-image">
                     <img src="img/hotel-2.jpg" width="135" height="90" alt="DESERT QUIAL INN">
                 </div>
+                <div class="block">
+                <h3>DESERT QUIAL INN</h3>
                 <div class="hotel-type" aria-label="Тип отеля">
                   <b>МОТЕЛЬ</b>
-                  <a class="button" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
+                  <b>ОТ 3000 Р.</b>
                 </div>
                 <div class="hotel-order">
-                  <b>ОТ 3000 Р.</b>
-                  <a class="button" href="#" aria-label="кнопка Забронировать">ЗАБРОНИРОВАТЬ</a>
+                  <a class="button-order" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
+                  <a class="booking-button" href="#" aria-label="кнопка Забронировать">ЗАБРОНИРОВАТЬ</a>
                 </div>
+              </div>
                 <div class="hotel-rating" aria-label="Рейтинг отеля в количестве звезд">
                   <ul class="hotel-star">
                     <li><img src="img/hotel-star.svg" width="18" height="17" alt="Звезда"></li>
@@ -85,18 +90,20 @@
 
           <li class="catalog-item">
             <div class="hotel-card">
-              <h3>VILLAS AT POCO DIABLO</h3>
                 <div class="hotel-image">
                     <img src="img/hotel-3.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
                 </div>
+                <div class="block">
+                  <h3>VILLAS AT POCO DIABLO</h3>
                 <div class="hotel-type" aria-label="Тип отеля">
                   <b>АПАРТАМЕНТЫ</b>
-                  <a class="button" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
+                  <b>ОТ 2000 Р.</b>
                 </div>
                 <div class="hotel-order">
-                  <b>ОТ 2000 Р.</b>
-                  <a class="button" href="#" aria-label="кнопка Забронировать">ЗАБРОНИРОВАТЬ</a>
+                  <a class="button-order" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
+                  <a class="booking-button" href="#" aria-label="кнопка Забронировать">ЗАБРОНИРОВАТЬ</a>
                 </div>
+              </div>
                 <div class="hotel-rating">
                   <ul class="hotel-star" aria-label="Рейтинг отеля в количестве звезд">
                     <li><img src="img/hotel-star.svg" width="18" height="17" alt="Звезда"></li>
@@ -110,7 +117,6 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
       <p class="footer-contacts" aria-label="Хэштег VISITSEDONA">
         #VISITSEDONA
       </p>
@@ -125,7 +131,7 @@
         <b>WEBSITE BY</b>
         <a class="copyright" href="https://htmlacademy.ru"><img src="img/HTMLAcademy.svg" width="115" height="41" alt="HTML Academy" aria-label="Ссылка на сайт разработчика - HTML Academy"></a>
       </p>
-    </div>
     </footer>
+  </div>
   </body>
 </html>
