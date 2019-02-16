@@ -68,6 +68,13 @@ a {
   align-items: center;
 }
 
+/*.mask {
+  height: 58px;
+  display: flex;
+  flex-direction: column-reverse;   Не смог поместить маску 
+  align-items: flex-start;
+}*/
+
 .splash img {
   display: block;
 }
@@ -108,10 +115,22 @@ a {
 .feature-item-description {
   text-align: center;
   background-color: #eeeeee;
-  padding-top: 52px;
-  padding-bottom: 61px;
-  padding-left: 50px;
-  padding-right: 62px;
+  padding-top: 51px;
+  padding-bottom: 64px;
+  padding-left: 59px;
+  padding-right: 61px;
+}
+
+.feature-item-logo {
+  background-size: 850px;
+  width: 800px;
+  background-image: url("../img/farm.jpg");
+}
+
+ .canyon-image {
+  background-size: 850px;
+  width: 1100px;
+  background-image: url("../img/canyon.jpg");
 }
 
 .city-features {
@@ -120,7 +139,6 @@ a {
   margin: 0;
   padding: 0;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .city-feature {
@@ -200,7 +218,6 @@ a {
 }
 
 .appointment-form {
-  border: 1px red solid;
   margin-bottom: 77px;
 }
 
@@ -345,7 +362,15 @@ a {
   background-color: #5496bd;
 }
 
+.hotels {
+  margin-bottom: 31px;
+}
+
 .hotels ul {
+  list-style: none;
+}
+
+.hotel-list ul {
   list-style: none;
 }
 
@@ -353,7 +378,6 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
-  border: 1px red solid;
 }
 
 .hotel-image {
@@ -373,7 +397,6 @@ a {
 
 .hotel-type {
   margin-bottom: 20px;
-  margin-right: auto;
 }
 
 .hotel-type b {
@@ -382,7 +405,6 @@ a {
   line-height: 21px;
   color: #000000;
   display: inline-block;
-  border: 1px red solid;
   width: 109px;
   margin-right: 7px;
 }
@@ -391,11 +413,12 @@ a {
   font-size: 14px;
   font-weight: normal;
   background-color: #f2f2f2;
-  padding: 6px 8px;
+  padding: 9px 16px 10px 14px;
 }
 
 .hotel-star {
   display: flex;
+  justify-content: flex-end;
   margin-top: 31px;
   margin-bottom: 48px;
 }
@@ -451,6 +474,7 @@ a {
   letter-spacing: normal;
   text-align: center;
   margin: 0;
+  padding-top: 51px;
   margin-left: 133px;
 }
 
