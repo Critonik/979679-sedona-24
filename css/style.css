@@ -8,6 +8,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
+  /* используй border-box для документа */
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -86,6 +87,8 @@ a {
   align-items: center;
 }
 
+/* маска вставляется через позишин абсолют */
+
 /*.mask {
   height: 58px;
   display: flex;
@@ -138,6 +141,8 @@ a {
   padding-left: 59px;
   padding-right: 61px;
 }
+
+/* 800, a ne 850 */
 
 .feature-item-logo {
   background-size: 850px;
