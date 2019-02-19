@@ -10,12 +10,22 @@ body {
   background-color: #ffffff;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .center {
@@ -59,6 +69,14 @@ a {
   color: #000000;
 }
 
+.site-navigation a:hover {
+  color: #a3c7de;
+}
+
+.site-navigation a:active {
+  color: #f5f5f5;
+}
+
 .splash{
   background-image: url("../img/bg.jpg");
   background-color: #88b7d5;
@@ -71,7 +89,7 @@ a {
 /*.mask {
   height: 58px;
   display: flex;
-  flex-direction: column-reverse;   Не смог поместить маску 
+  flex-direction: column-reverse;   Не смог поместить маску
   align-items: flex-start;
 }*/
 
@@ -115,15 +133,15 @@ a {
 .feature-item-description {
   text-align: center;
   background-color: #eeeeee;
-  padding-top: 51px;
-  padding-bottom: 64px;
+  padding-top: 45px;
+  padding-bottom: 50px;
   padding-left: 59px;
   padding-right: 61px;
 }
 
 .feature-item-logo {
   background-size: 850px;
-  width: 800px;
+  width: 850px;
   background-image: url("../img/farm.jpg");
 }
 
@@ -143,9 +161,35 @@ a {
 
 .city-feature {
   text-align: center;
-  width: 400px;
-  padding-top: 162px;
-  padding-bottom: 85px;
+  width: 240px;
+  padding-left: 90px;
+  padding-right: 73px;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.city-feature:nth-child(1) .city-feature-pic  {
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  background-image: url(../img/house.svg);
+  background-repeat: no-repeat;
+}
+
+.city-feature:nth-child(2) .city-feature-pic {
+  width: 74px;
+  height: 70px;
+  position: absolute;
+  background-image: url(../img/burger.svg);
+  background-repeat: no-repeat;
+}
+
+.city-feature:nth-child(3) .city-feature-pic {
+  width: 64px;
+  height: 76px;
+  position: absolute;
+  background-image: url(../img/gift.svg);
+  background-repeat: no-repeat;
 }
 
 .feature-item h3 {
@@ -265,6 +309,7 @@ a {
   margin-left: 22px;
   margin-bottom: 28px;
   width: 347px;
+  padding-left: 14px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -282,9 +327,10 @@ a {
   font-weight: bold;
   color: #000000;
   background-color: #f2f2f2;
-  width: 347px;
+  width: 349px;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-left: 14px;
   margin-left: 16px;
   margin-bottom: 28px;
 }
@@ -323,10 +369,9 @@ a {
   position:absolute;
   margin: auto;
   transform: translateX(-50%);
-  left: 62%;
+  left: 63%;
   width: 22px;
   height: 22px;
-  background-color: #cacaca;
 }
 
 .calendar:hover {
@@ -382,21 +427,32 @@ a {
 
 .hotel-image {
   margin-right: 31px;
-  margin-top: 31px;
+  margin-top: 23px;
 }
 
 .block {
   display: inline-block;
-  height: 150px;
   margin-right: 523px;
 }
 
-.hotel-card h2 {
-  margin-bottom: 18px;
+.hotel-card h3 {
+  margin-bottom: 10px;
+}
+
+.hotel-name {
+  color: #000000;
+}
+
+.hotel-name:hover {
+  color: #a3c7de;
+}
+
+.hotel-name:active {
+  color: #f5f5f5;
 }
 
 .hotel-type {
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 
 .hotel-type b {
@@ -419,8 +475,8 @@ a {
 .hotel-star {
   display: flex;
   justify-content: flex-end;
-  margin-top: 31px;
-  margin-bottom: 48px;
+  margin-top: 28px;
+  margin-bottom: 37px;
 }
 
 .button-order {
@@ -440,6 +496,7 @@ a {
   background-color: #5496bd;
   color: #88b6d1;
 }
+
 .booking-button {
   font-size: 14px;
   line-height: 21px;
@@ -471,7 +528,6 @@ a {
   font-style: normal;
   font-stretch: normal;
   line-height: 26px;
-  letter-spacing: normal;
   text-align: center;
   margin: 0;
   padding-top: 51px;

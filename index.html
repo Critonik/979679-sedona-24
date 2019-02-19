@@ -17,7 +17,7 @@
           <ul class="site-navigation" aria-label="Навигация по сайту">
             <li><a href="info.html">Информация</a></li>
             <li><a href="media.html">Фото и видео</a></li>
-            <li class=><a href="mapofstate.html">Карта штата</a></li>
+            <li><a href="mapofstate.html">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
@@ -50,18 +50,21 @@
                 <ul class="city-features">
                   <li class="city-feature">
                     <div class="city-feature-description" aria-label="Преимущество Седоны">
+                      <div class="city-feature-pic"></div>
                       <h3>Жильё</h3>
                       <p>Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
                     </div>
                   </li>
                   <li class="city-feature">
                     <div class="city-feature-description" aria-label="Преимущество Седоны">
+                      <div class="city-feature-pic"></div>
                       <h3>Еда</h3>
                       <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                     </div>
                   </li>
                   <li class="city-feature">
                     <div class="city-feature-description" aria-label="Преимущество Седоны">
+                      <div class="city-feature-pic"></div>
                       <h3>Сувениры</h3>
                       <p>Не только китайского, но и местного производства!</p>
                     </div>
@@ -116,13 +119,13 @@
            <div class="appointment-date">
             <div class="arrival" aria-label="Прибытие">
                <label for="appointment-date">Дата заезда</label>
-              <input id="appointment-date" type="text" name="date" value="" placeholder="24 апреля 2017" aria-label="Строка ввода даты заезда">
+              <input id="appointment-date" type="text" name="date" value="24 АПРЕЛЯ 2017" placeholder="" aria-label="Строка ввода даты заезда">
               <button class="calendar" aria-label="Календарь для выбора даты заезда"></button> <!--Поменять цвет в текстовом редакторе-->
             </div>
 
             <div class="departure">
               <label for="departure-date">Дата выезда</label>
-             <input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017" aria-label="Строка ввода даты выезда">
+             <input id="departure-date" type="text" name="date" value="4 ИЮЛЯ 2017" placeholder="" aria-label="Строка ввода даты выезда">
              <button class="calendar" aria-label="Календарь для выбора даты выезда"></button>
             </div>
            </div>
@@ -130,13 +133,13 @@
             <div class="adult">
               <label for="adult">Взрослые:</label>
                 <button class="counter" type="button" aria-label="Кнопка плюс">+</button>
-                <input type="number" id="adult" name="count" value="2" aria-label="Строка ввода количества взрослых">
+                <input type="text" id="adult" name="count" value="2" aria-label="Строка ввода количества взрослых">
                 <button class="counter" type="button" aria-label="Кнопка минус">-</button>
             </div>
             <div class="child">
               <label for="child">Дети:</label>
                 <button class="counter" type="button" aria-label="Кнопка плюс">+</button>
-                <input type="number" id="child" name="count" value="2" aria-label="Строка ввода количества взрослых">
+                <input type="text" id="child" name="count" value="2" aria-label="Строка ввода количества взрослых">
                 <button class="counter" type="button" aria-label="Кнопка минус">-</button>
            </div>
           </div>
