@@ -407,6 +407,153 @@ a {
   background-color: #5496bd;
 }
 
+.filters {
+  outline: 1px red solid;
+  background-image: url("../img/filter-background.jpg");
+  background-position: center;
+  display: flex;
+}
+
+.selection-block {
+  display: flex;
+}
+
+.selection-form {
+  display: flex;
+}
+
+.infrastructure {
+  outline: 1px red solid;
+  display: block;
+  width: 143px;
+  margin-left: 73px;
+}
+
+.housetype {
+  outline: 1px red solid;
+  display: block;
+  width: 151px;
+  margin-left: 100px;
+}
+
+.filter-range {
+  outline: 1px red solid;
+  display: block;
+  width: 330px;
+  margin-left: 336px;
+  margin-right: 73px;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
 .hotels {
   margin-bottom: 31px;
 }
@@ -554,6 +701,17 @@ a {
 .footer-social li {
   margin-right: 8px;
   padding: 16px;
+  width: 46px;
+  height: 48px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 48px;
+  background-color: #81b3d2;
 }
 
 .social-button:hover {
@@ -576,18 +734,19 @@ a {
   font-weight: normal;
   font-style: normal;
   line-height: 26px;
+  margin-right: 6px;
 }
 
-.footer-copyright img {
+.footer-copyright a {
   width: 115px;
   height: 41px;
   object-fit: contain;
 }
 
-.footer-copyright img:hover {
-  background-color: #81b3d2;
+.footer-copyright:hover path {
+  fill: #81b3d2;
 }
 
-.footer-copyright img:active {
-  background-color: #bdbbbc;
+.footer-copyright:active path {
+  fill: #bdbbbc;
 }
