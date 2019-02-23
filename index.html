@@ -37,7 +37,7 @@
             <li class="feature-item" aria-label="Список преимуществ">
               <div class="feature-item-description special-color">
                 <h3>Настоящий<br> городок</h3>
-                <div class="feature-number">-№1-</div>
+                <span class="feature-number">-№1-</span>
                 <p>Седона - не аттакцион для туристов,<br> там течет своя жизнь</p>
               </div>
               <div class="feature-item-logo">
@@ -64,7 +64,7 @@
               </div>
               <div class="feature-item-description special-color">
                 <h3>Там есть<br> мост дьявола</h3>
-                <div class="feature-number">-№2-</div>
+                <span class="feature-number">-№2-</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </li>
@@ -73,21 +73,21 @@
                 <li class="feature">
                   <div class="feature-item-description">
                       <h3>Небольшая<br> площадь</h3>
-                      <div class="feature-number">-№3-</div>
+                      <span class="feature-number">-№3-</span>
                       <p>Все достопримечательности находятся очень близко</p>
                   </div>
                 </li>
                 <li class="feature">
                     <div class="feature-item-description">
                       <h3>Красивая<br> дорога</h3>
-                      <div class="feature-number">-№4-</div>
+                      <span class="feature-number">-№4-</span>
                       <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </div>
                 </li>
                 <li class="feature">
                   <div class="feature-item-description">
                     <h3>Мало<br> туристов</h3>
-                    <div class="feature-number">-№5-</div>
+                    <span class="feature-number">-№5-</span>
                     <p>Большинство едет в Гранд Каньон и толпится там</p>
                   </div>
                 </li>
@@ -95,48 +95,47 @@
             </li>
           </ul>
         </section>
-
         <section class="appointment">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+          <div class="appointment-headline">
+            <a class="find" href="#">Поиск гостиницы в Седоне</a>
+          </div>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма поиска гостиниц">
           <div class="appointment-date">
            <div class="arrival" aria-label="Прибытие">
-              <label for="appointment-date">Дата заезда:</label>
+             <label for="appointment-date">Дата заезда:</label>
              <input id="appointment-date" type="text" name="date" value="24 АПРЕЛЯ 2017" placeholder="" aria-label="Строка ввода даты заезда">
              <button class="arrival-calendar" aria-label="Календарь для выбора даты заезда"></button>
            </div>
            <div class="departure">
-             <label for="departure-date">Дата выезда:</label>
+            <label for="departure-date">Дата выезда:</label>
             <input id="departure-date" type="text" name="date" value="4 ИЮЛЯ 2017" placeholder="" aria-label="Строка ввода даты выезда">
             <button class="departure-calendar" aria-label="Календарь для выбора даты выезда"></button>
            </div>
           </div>
           <div class="people-amount" aria-label="Количество приезжающих гостей">
            <div class="adult">
-             <label for="adult">Взрослые:</label>
-               <button class="counter" type="button" aria-label="Кнопка плюс">+</button>
-               <input type="text" id="adult" name="count" value="2" aria-label="Строка ввода количества взрослых">
-               <button class="counter" type="button" aria-label="Кнопка минус">-</button>
+            <label for="adult">Взрослые:</label>
+              <button class="counter-minus" type="button" aria-label="Кнопка минус">-</button>
+              <input type="text" id="adult" name="count" value="2" aria-label="Строка ввода количества взрослых">
+              <button class="counter-plus" type="button" aria-label="Кнопка плюс">+</button>
            </div>
            <div class="child">
-             <label for="child">Дети:</label>
-               <button class="counter" type="button" aria-label="Кнопка плюс">+</button>
-               <input type="text" id="child" name="count" value="2" aria-label="Строка ввода количества взрослых">
-               <button class="counter" type="button" aria-label="Кнопка минус">-</button>
+            <label for="child">Дети:</label>
+              <button class="counter-minus" type="button" aria-label="Кнопка минус">-</button>
+              <input type="text" id="child" name="count" value="0" aria-label="Строка ввода количества взрослых">
+              <button class="counter-plus" type="button" aria-label="Кнопка плюс">+</button>
           </div>
          </div>
          <button class="button" type="submit" aria-label="Кнопка найти">НАЙТИ</button>
         </form>
-           <h2>Заинтересовались?</h2>
-           <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-           <div class="appointment-headline">
-             <a class="find" href="#">Поиск гостиницы в Седоне</a>
-           </div>
         </section>
         <section class="map">
           <h2 class="visually-hidden">
             Как до нас добраться
           </h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36508.14812600309!2d-111.74960878063541!3d34.86047077080798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1550860973392" width="1200" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36508.14812600309!2d-111.74960878063541!3d34.86047077080798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1550860973392" width="1200" height="595" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
       </main>
       <footer class="main-footer">
