@@ -64,6 +64,7 @@
               </div>
               <div class="feature-item-description special-color">
                 <h3>Там есть<br> мост дьявола</h3>
+                <!-- не div -->
                 <div class="feature-number">-№2-</div>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
@@ -100,6 +101,7 @@
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма поиска гостиниц">
           <div class="appointment-date">
            <div class="arrival" aria-label="Прибытие">
+             <!-- кстати, тут в лейблах везде они чего-то больше оттабулированы, чем его соседи. они же на одном вроне -->
               <label for="appointment-date">Дата заезда:</label>
              <input id="appointment-date" type="text" name="date" value="24 АПРЕЛЯ 2017" placeholder="" aria-label="Строка ввода даты заезда">
              <button class="arrival-calendar" aria-label="Календарь для выбора даты заезда"></button>
@@ -128,6 +130,7 @@
         </form>
            <h2>Заинтересовались?</h2>
            <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+          <!-- div.appointment-headline лишний тут, форму поставь последним эелемнтом в блоке appointment -->
            <div class="appointment-headline">
              <a class="find" href="#">Поиск гостиницы в Седоне</a>
            </div>
@@ -143,6 +146,7 @@
         <p class="footer-contacts" aria-label="Хэштег VISITSEDONA">
           #VISITSEDONA
         </p>
+        <!-- можно кильнуть Div, а сразу писать Ul -->
         <div class="footer-social">
           <ul>
             <li>
