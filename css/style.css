@@ -521,6 +521,8 @@ a {
   background-image: url("../img/calendaractive.svg");
 }
 
+/* с ховером вроде всё верно сделал, но что-то  в самом свг криво, не зацикливайся, поправим после */
+
 .map {
   height: 475px;
   background-repeat: no-repeat;
