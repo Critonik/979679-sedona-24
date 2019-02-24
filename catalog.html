@@ -30,31 +30,31 @@
         <form class="selection-form" action="#" method="post">
           <div class="infrastructure">
             <h2>Инфраструктура:</h2>
-            <input type="checkbox" name="pool" value="Бассейн" id="checkbox01" checked>
+            <input class="infrastructure-checked" type="checkbox" name="pool" value="Бассейн" id="checkbox01" checked>
             <label for="checkbox01">Бассейн</label>
-            <input type="checkbox" name="parking" value="Парковка" id="checkbox02">
+            <input class="infrastructure-checked" type="checkbox" name="parking" value="Парковка" id="checkbox02">
             <label for="checkbox02">Парковка</label>
-            <input type="checkbox" name="wifi" value="Парковка" id="checkbox03">
+            <input class="infrastructure-checked" type="checkbox" name="wifi" value="Парковка" id="checkbox03">
             <label for="checkbox03">Wi-Fi</label>
           </div>
           <div class="housetype">
             <h2>Тип жилья:</h2>
-            <input type="checkbox" name="hotel" value="Гостиница" id="checkbox04" checked>
+            <input class="housetype-checked" type="checkbox" name="hotel" value="Гостиница" id="checkbox04" checked>
             <label for="checkbox04">Гостиница</label>
-            <input type="checkbox" name="motel" value="Мотель" id="checkbox05" checked>
+            <input class="housetype-checked" type="checkbox" name="motel" value="Мотель" id="checkbox05" checked>
             <label for="checkbox05">Мотель</label>
-            <input type="checkbox" name="apartments" value="Апартаменты" id="checkbox06" checked>
+            <input class="housetype-checked" type="checkbox" name="apartments" value="Апартаменты" id="checkbox06" checked>
             <label for="checkbox06">Апартаменты</label>
           </div>
         <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
-              <div class="price-controls">
-                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-          </div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        </div>
         <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
+          <div class="scale">
+            <div class="bar"></div>
           </div>
           <div class="range-toggle range-toggle-min"></div>
           <div class="range-toggle range-toggle-max"></div>
