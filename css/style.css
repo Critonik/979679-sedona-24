@@ -240,19 +240,19 @@ a {
 .city-feature-house::after {
   width: 75px;
   height: 72px;
-  background-image: url(../img/house.svg);
+  background-image: url("../img/house.svg");
 }
 
 .city-feature-eat::after {
   width: 74px;
   height: 70px;
-  background-image: url(../img/burger.svg);
+  background-image: url("../img/burger.svg");
 }
 
 .city-feature-suv::after {
   width: 64px;
   height: 76px;
-  background-image: url(../img/gift.svg);
+  background-image: url("../img/gift.svg");
   top:55px;
 }
 
@@ -793,14 +793,19 @@ a {
 .sorting-range {
   display: flex;
   align-items: center;
-  outline: 1px red solid;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
 }
 
-.sorting-range-list ul {
-  margin: 0;
+.sorting-range span {
+  display: block;
+  margin-right: 31px;
+}
+
+ul.sorting-range-list {
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -809,26 +814,25 @@ a {
   display: flex;
   align-items: center;
   font-weight: normal;
-  outline: 1px red solid;
 }
 
 .sorting-range-list a {
   margin-right: 31px;
-  color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.3);
   border-bottom: 0.5px gray dashed;
 }
 
-.active a {
-  color: #b9d3e4;
+a.active {
+  color: #81b3d2;
   border-bottom: 0;
 }
 
 .sorting-ab {
-  margin-left: 473px;
+  margin-left: 520px;
   position: relative;
 }
 
-.sorting-ab-list ul {
+ul.sorting-ab-list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -844,12 +848,15 @@ a {
   position: absolute;
   background-image: url("../img/icon-up-dir.svg");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 10px;
   height: 11px;
   right: 10px;
+  cursor: pointer;
 }
 
-.icon-up-dir .active path {
+.icon-up-dir.active path {
   fill: #b9d3e4;
 }
 
@@ -858,8 +865,11 @@ a {
   position: absolute;
   background-image: url("../img/icon-down-dir.svg");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 10px;
   height: 11px;
+  cursor: pointer;
 }
 
 .hotels {
