@@ -341,7 +341,7 @@ a {
   width: 571px;
   position: absolute;
   margin: 0;
-  bottom: -407px;
+  bottom: -402px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffffff;
@@ -524,7 +524,7 @@ a {
 /* с ховером вроде всё верно сделал, но что-то  в самом свг криво, не зацикливайся, поправим после */
 
 .map {
-  height: 475px;
+  height: 595px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -538,6 +538,7 @@ a {
   padding: 21px 0;
   width: 100%;
   background-color: #81b3d2;
+  border: 0;
 }
 
 .button:hover {
@@ -562,8 +563,6 @@ a {
   line-height: 21px;
   margin-bottom: 24px;
 }
-
-
 
 .filters label {
   margin: 0;
@@ -594,6 +593,7 @@ a {
   margin-left: 39px;
 }
 
+/*Использую везде бефоре, но в состоянии cheked пропадает левый край у квадратика чекбокса*/
 .infrastructure-checked + label::before {
   content: "";
   position: absolute;
@@ -605,7 +605,7 @@ a {
   left: -38px;
 }
 
-.infrastructure-checked:checked + label::after {
+.infrastructure-checked:checked + label::before {
   content: "";
   position: absolute;
   width: 22px;
@@ -643,7 +643,7 @@ a {
   left: -33px;
 }
 
-.housetype-checked:checked + label::after {
+.housetype-checked:checked + label::before {
   content: "";
   position: absolute;
   width: 22px;
@@ -704,7 +704,7 @@ a {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 45px;
 }
 
 .price-controls input {
@@ -878,10 +878,12 @@ ul.sorting-ab-list {
 
 .hotels ul {
   list-style: none;
+  margin: 0;
 }
 
 .hotel-list ul {
   list-style: none;
+  margin: 0;
 }
 
 .hotel-card {
@@ -1049,15 +1051,20 @@ ul.sorting-ab-list {
   display: flex;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .footer-copyright b {
   width: 74px;
-  height: 11px;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
   margin-right: 9px;
+}
+
+.footer-copyright a {
+  width: 114px;
+  height: 41px;
 }
 
 .footer-copyright:hover path {
