@@ -347,6 +347,7 @@ a {
   background-color: #ffffff;
   padding: 55px 59px;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 .appointment-headline {
@@ -529,6 +530,7 @@ a {
   background-position: center;
   background-size: cover;
   background-image: url("../img/map.jpg");
+  position: relative;
 }
 
 .button {
@@ -986,9 +988,11 @@ ul.sorting-ab-list {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  padding: 36px 132px;
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 36px 130px;
   padding-right: 101px;
-  position: relative;
+  position: absolute;
   align-items: center;
   z-index: 10;
   opacity: 0.9;
@@ -999,7 +1003,7 @@ ul.sorting-ab-list {
   font-style: normal;
   line-height: 26px;
   margin: 0;
-  margin-top: 7px;
+  padding-top: 7px;
 }
 
 .social-button img {
@@ -1019,9 +1023,7 @@ ul.sorting-ab-list {
   justify-content: center;
   margin: 0;
   padding: 0;
-  position: absolute;
-  left: 43.5%;
-  top: 34px
+  margin-left: 43px;
 }
 
 .footer-social li {
