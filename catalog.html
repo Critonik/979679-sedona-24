@@ -18,7 +18,7 @@
             <li><a href="info.html">Информация</a></li>
             <li><a href="media.html">Фото и видео</a></li>
             <li><a href="mapofstate.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li><a class="active-page" href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -78,8 +78,20 @@
         </div>
         <div class="sorting-ab">
           <ul class="sorting-ab-list">
-            <li><a href="#"><span class="icon-up-dir"></span></a></li>
-            <li><a><span class="icon-down-dir active"></span></a></li>
+            <li>
+              <a href="#">
+                <span class="icon-up-dir">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon-down-dir active">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#b9d3e4" d="M5.5 10L0 0h11"/></svg>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -94,15 +106,15 @@
                 <div class="block">
                 <h3><a class="hotel-name" href="#">AMARA RESORT & SPA</a></h3>
                 <div class="hotel-type" aria-label="Тип отеля">
-                  <b>ГОСТИНИЦА</b>
-                  <b>ОТ 4000 Р.</b>
-
+                  <span>ГОСТИНИЦА</span>
+                  <span>ОТ 4000 Р.</span>
                 </div>
                 <div class="hotel-order">
                   <a class="button-order" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
                   <a class="booking-button" href="#" aria-label="кнопка Забронировать">ЗАБРОНИРОВАТЬ</a>
                 </div>
                 </div>
+                <div class="rating-block">
               <div class="hotel-rating" aria-label="Рейтинг отеля в количестве звезд">
                   <ul class="hotel-star">
                     <li><img src="img/hotel-star.svg" width="18" height="17" alt="Звезда"></li>
@@ -112,6 +124,7 @@
                   </ul>
                 <b>РЕЙТИНГ: 8,5</b>
               </div>
+            </div>
             </article>
           </li>
           <li class="catalog-item">
@@ -122,8 +135,8 @@
                 <div class="block">
                 <h3><a class="hotel-name" href="#">DESERT QUIAL INN</a></h3>
                 <div class="hotel-type" aria-label="Тип отеля">
-                  <b>МОТЕЛЬ</b>
-                  <b>ОТ 3000 Р.</b>
+                  <span>МОТЕЛЬ</span>
+                  <span>ОТ 3000 Р.</span>
                 </div>
                 <div class="hotel-order">
                   <a class="button-order" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
@@ -148,8 +161,8 @@
                 <div class="block">
                   <h3><a class="hotel-name" href="#">VILLAS AT POCO DIABLO</a></h3>
                 <div class="hotel-type" aria-label="Тип отеля">
-                  <b>АПАРТАМЕНТЫ</b>
-                  <b>ОТ 2000 Р.</b>
+                  <span>АПАРТАМЕНТЫ</span>
+                  <span>ОТ 2000 Р.</span>
                 </div>
                 <div class="hotel-order">
                   <a class="button-order" href="#" aria-label="кнопка Подробнее">ПОДРОБНЕЕ</a>
