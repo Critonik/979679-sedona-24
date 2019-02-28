@@ -132,7 +132,7 @@ a.active-page {
 
 .caption {
   padding-top: 64px;
-  padding-bottom: 53px;
+  padding-bottom: 45px;
 }
 
 .caption h2 {
@@ -174,8 +174,8 @@ a.active-page {
   box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 65px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .feature-item-description h3 {
@@ -216,10 +216,10 @@ a.active-page {
   box-sizing: border-box;
   text-align: center;
   width: 400px;
-  padding-left: 73px;
-  padding-right: 73px;
-  padding-top: 160px;
-  padding-bottom: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 155px;
+  padding-bottom: 91px;
   position: relative;
 }
 
@@ -318,7 +318,7 @@ a.active-page {
 
 .appointment {
   position: relative;
-  padding-top: 55px;
+  padding-top: 53px;
 }
 
 .appointment h2 {
@@ -328,7 +328,7 @@ a.active-page {
   color: #000000;
   background-color: #ffffff;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .appointment p {
@@ -339,7 +339,7 @@ a.active-page {
   color: #333333;
   background-color: #ffffff;
   margin: 0px;
-  margin-bottom: 53px;
+  margin-bottom: 45px;
 }
 
 .appointment-form {
@@ -560,7 +560,10 @@ a.active-page {
 .filters {
   background-image: url("../img/filter-background.jpg");
   background-position: center;
-  padding: 31px 73px;
+  padding-top: 30px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-bottom: 12px;
 }
 
 .filters h2 {
@@ -577,7 +580,7 @@ a.active-page {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   position: relative;
 }
 
@@ -588,7 +591,7 @@ a.active-page {
 .infrastructure {
   display: flex;
   flex-direction: column;
-  width: 256px;
+  width: 249px;
   box-sizing: border-box;
 }
 
@@ -627,7 +630,6 @@ a.active-page {
   display: flex;
   flex-direction: column;
   width: 256px;
-  margin-left: 100px;
   box-sizing: border-box;
 }
 
@@ -712,6 +714,7 @@ a.active-page {
 .price-controls .max-price {
   width: 90px;
   padding-left: 45px;
+  text-align: right;
 }
 
 .price-controls input {
@@ -721,6 +724,7 @@ a.active-page {
   font: inherit;
   background: none;
   border: none;
+  text-align: left;
 }
 
 .range-controls {
@@ -785,7 +789,7 @@ a.active-page {
 .sorting-block {
   display: flex;
   list-style: none;
-  padding: 32px 37px;
+  padding: 30px 73px;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -794,8 +798,7 @@ a.active-page {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  width: 165px;
-  text-align: left;
+  margin-right: 49px;
 }
 
 .sorting-range {
@@ -804,11 +807,12 @@ a.active-page {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
+  margin-right: 477px;
 }
 
 .sorting-range span {
   display: block;
-  margin-right: 31px;
+  margin-right: 36px;
 }
 
 ul.sorting-range-list {
@@ -836,7 +840,6 @@ a.active {
 }
 
 .sorting-ab {
-  margin-left: 520px;
   position: relative;
 }
 
@@ -906,15 +909,14 @@ ul.sorting-ab-list {
 }
 
 .hotel-image {
-  margin-right: 31px;
+  width: 165px;
 }
 
 .block {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 263px;
-  margin-right: 507px;
+  width: 781px;
 }
 
 .rating-block {
@@ -931,7 +933,11 @@ ul.sorting-ab-list {
 .block h3 {
   padding: 0;
   margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
   margin-bottom: 5px;
+  width: 781px;
 }
 
 a.hotel-name {
@@ -951,6 +957,7 @@ a.hotel-name {
   margin: 0;
   padding: 0;
   display: flex;
+  width: 781px;
 }
 
 .hotel-type span {
@@ -964,11 +971,12 @@ a.hotel-name {
   margin-right: 7px;
 }
 
-.hotel-rating b {
+.hotel-rating span {
   font-size: 14px;
   font-weight: normal;
   background-color: #f2f2f2;
-  padding: 9px 16px 10px 14px;
+  padding: 5px 13px;
+  text-align: center;
 }
 
 .hotel-star {
@@ -983,9 +991,14 @@ ul.hotel-star {
   margin-bottom: 37px;
 }
 
+.hotel-star li{
+  margin-left: 4px;
+}
+
 .hotel-order {
   display: flex;
   margin-top: 15px;
+  width: 781px;
 }
 
 .button-order {
@@ -1030,7 +1043,9 @@ ul.hotel-star {
   justify-content: space-between;
   width: 1200px;
   box-sizing: border-box;
-  padding: 36px 130px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  padding-left: 130px;
   padding-right: 101px;
   align-items: center;
 }
@@ -1040,6 +1055,10 @@ ul.hotel-star {
   z-index: 10;
   opacity: 0.9;
   bottom:0px;
+  padding-top: 31px;
+  padding-bottom: 50px;
+  padding-left: 130px;
+  padding-right: 101px;
 }
 
 .footer-contacts {
