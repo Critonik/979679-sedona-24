@@ -112,6 +112,7 @@ a.active-page {
   justify-content: center;
   align-items: center;
   position: relative;
+  background-position-y:-95px; 
 }
 
 .splash::after {
