@@ -100,6 +100,8 @@ a {
 
 a.active-page {
   color: #766357;
+  cursor: default;
+  pointer-events: none;
 }
 
 .splash{
@@ -638,7 +640,7 @@ a.active-page {
 }
 
 .housetype label {
-  margin-left: 50px;
+  margin-left: 56px;
 }
 
 .housetype-checked + label::before {
@@ -649,7 +651,7 @@ a.active-page {
   background-image: url("../img/checkbox-off.svg");
   background-position: center;
   border: 0;
-  left: -33px;
+  left: -39px;
 }
 
 .housetype-checked:checked + label::before {
@@ -660,7 +662,7 @@ a.active-page {
   background-image: url("../img/checkbox-on.svg");
   background-position: center;
   border: 0;
-  left: -33px;
+  left: -39px;
 }
 
 .housetype h2 {
@@ -896,33 +898,30 @@ ul.sorting-ab-list {
 .catalog-item {
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #e5e5e5;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #e5e5e5;\
+  display: flex;
+  align-items: flex-start;
 }
 
 .hotel-card {
   display: flex;
   margin: 0;
   padding: 0;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hotel-image {
-  width: 165px;
+  width: 175px;
+  height: 90px;
 }
 
-.block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 781px;
-}
 
 .rating-block {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   width: 120px;
 }
 
@@ -936,8 +935,10 @@ ul.sorting-ab-list {
   font-size: 21px;
   line-height: 26px;
   text-align: left;
-  margin-bottom: 5px;
-  width: 781px;
+  width: 771px;
+  letter-spacing: 0.2px;
+  margin-top: -5px;
+  margin-bottom: 10px;
 }
 
 a.hotel-name {
@@ -956,8 +957,9 @@ a.hotel-name {
 .hotel-type {
   margin: 0;
   padding: 0;
+  width: 771px;
   display: flex;
-  width: 781px;
+  margin-bottom: 13px;
 }
 
 .hotel-type span {
@@ -977,12 +979,12 @@ a.hotel-name {
   background-color: #f2f2f2;
   padding: 5px 13px;
   text-align: center;
+  opacity: 0.8;
 }
 
 .hotel-star {
   display: flex;
   justify-content: flex-end;
-  margin-top: 28px;
 }
 
 ul.hotel-star {
@@ -996,9 +998,7 @@ ul.hotel-star {
 }
 
 .hotel-order {
-  display: flex;
-  margin-top: 15px;
-  width: 781px;
+  width: 771px;
 }
 
 .button-order {
@@ -1006,8 +1006,8 @@ ul.hotel-star {
   line-height: 21px;
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 3px 17px;
-  margin-right: 9px;
+  padding: 5px 17px;
+  margin-right: 2px;
 }
 
 .button-order:hover {
@@ -1024,7 +1024,7 @@ ul.hotel-star {
   line-height: 21px;
   color: #ffffff;
   background-color: #766357;
-  padding: 3px 17px;
+  padding: 5px 17px;
 }
 
 .booking-button:hover {
