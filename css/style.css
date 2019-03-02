@@ -69,7 +69,7 @@ a {
 }
 
 .site-navigation li {
-    width: 20%;
+  width: 20%;
 }
 
 .site-navigation li:nth-child(2) {
@@ -112,7 +112,7 @@ a.active-page {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-position-y:-95px; 
+  background-position-y:-95px;
 }
 
 .splash::after {
@@ -901,7 +901,7 @@ ul.sorting-ab-list {
   padding-right: 72px;
   padding-top: 29px;
   padding-bottom: 29px;
-  border-bottom: 1px solid #e5e5e5;\
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   align-items: flex-start;
 }
