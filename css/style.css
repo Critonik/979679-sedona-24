@@ -15,7 +15,7 @@ body {
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #fefefe;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -37,6 +37,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  box-shadow: 0 0 10px 10px rgba(225,225,225,0.5);
 }
 
 .main-navigation {
@@ -134,8 +135,8 @@ a.active-page {
 }
 
 .caption {
-  padding-top: 64px;
-  padding-bottom: 45px;
+  padding-top: 60px;
+  padding-bottom: 47px;
 }
 
 .caption h2 {
@@ -144,7 +145,8 @@ a.active-page {
   text-align: center;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  letter-spacing: 0.2px;
 }
 
 .caption p {
@@ -221,17 +223,24 @@ a.active-page {
   width: 400px;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 155px;
-  padding-bottom: 91px;
+  padding-top: 168px;
+  padding-bottom: 80px;
   position: relative;
 }
 
 .city-feature h3 {
   margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 21px;
+  line-height: 14px;
 }
 
 .city-feature p {
   margin: 0;
+  letter-spacing: 0.1px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .city-feature::after {
@@ -304,24 +313,13 @@ a.active-page {
   color: #ffffff;
 }
 
-.city-features h3 {
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.city-features p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
-
 .special-color {
   background-color: #81b3d2;
 }
 
 .appointment {
   position: relative;
-  padding-top: 53px;
+  padding-top: 50px;
 }
 
 .appointment h2 {
@@ -352,7 +350,7 @@ a.active-page {
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffffff;
-  padding: 55px 59px;
+  padding: 55px 52px;
   box-sizing: border-box;
   z-index: 10;
 }
@@ -396,9 +394,8 @@ a.active-page {
   background-color: #f2f2f2;
   border:0;
   height: 35px;
-  width: 331px;
   padding-left: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   width: 346px;
 }
 
@@ -408,10 +405,12 @@ a.active-page {
 
 .arrival input:focus {
   background-color:#ffffff;
+  outline: 1px #e5e5e5 solid;
 }
 
 .arrival label {
-  margin-right: 10px;
+  margin-right: 21px;
+  letter-spacing: 0.1px;
 }
 
 .departure input {
@@ -424,7 +423,7 @@ a.active-page {
   height: 35px;
   width: 346px;
   padding-left: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .departure input:hover {
@@ -433,15 +432,16 @@ a.active-page {
 
 .departure input:focus {
   background-color:#ffffff;
+  outline: 1px #e5e5e5 solid;
 }
 
 .departure label {
-  margin-right: 9px;
+  margin-right: 18px;
 }
 
 .people-amount {
   display: flex;
-  margin-bottom: 56px;
+  margin-bottom: 52px;
 }
 
 .people-amount input {
@@ -466,11 +466,11 @@ a.active-page {
 }
 
 .adult label {
-  margin-right: 32px;
+  margin-right: 40px;
 }
 
 .child label {
-  margin-right: 23px;
+  margin-right: 26px;
 }
 
 .counter-plus {
@@ -506,8 +506,8 @@ a.active-page {
   position: absolute;
   width: 22px;
   height: 22px;
-  right: 75px;
-  top: 63px;
+  right: 66px;
+  top: 62px;
 }
 
 .departure-calendar {
@@ -517,8 +517,8 @@ a.active-page {
   position: absolute;
   width: 22px;
   height: 22px;
-  right: 75px;
-  top: 127px;
+  right: 66px;
+  top: 129px;
 }
 
 .arrival-calendar:hover {
@@ -527,6 +527,16 @@ a.active-page {
 
 .arrival-calendar:active {
   background-image: url("../img/calendaractive.svg");
+}
+
+.button {
+  font-weight: bold;
+  font-size: 21px;
+  color: #ffffff;
+  padding: 16px 0;
+  width: 100%;
+  background-color: #81b3d2;
+  border: 0;
 }
 
 /* с ховером вроде всё верно сделал, но что-то  в самом свг криво, не зацикливайся, поправим после */
@@ -539,16 +549,6 @@ a.active-page {
   background-image: url("../img/map.jpg");
   position: relative;
   z-index: 0;
-}
-
-.button {
-  font-weight: bold;
-  font-size: 21px;
-  color: #ffffff;
-  padding: 21px 0;
-  width: 100%;
-  background-color: #81b3d2;
-  border: 0;
 }
 
 .button:hover {
@@ -618,12 +618,35 @@ a.active-page {
   left: -38px;
 }
 
+.infrastructure-checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-position: center;
+  border: 0;
+  left: -38px;
+}
+
 .infrastructure-checked:checked + label::before {
   content: "";
   position: absolute;
   width: 27px;
   height: 22px;
   background-image: url("../img/checkbox-on.svg");
+  background-position: center;
+  border: 0;
+  left: -38px;
+}
+
+.infrastructure-checked:checked:disabled + label::before {
+  color: #686869;
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 22px;
+  background-image: url("../img/checkbox-on-disabled.svg");
   background-position: center;
   border: 0;
   left: -38px;
@@ -655,12 +678,34 @@ a.active-page {
   left: -39px;
 }
 
+.housetype-checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-position: center;
+  border: 0;
+  left: -39px;
+}
+
 .housetype-checked:checked + label::before {
   content: "";
   position: absolute;
   width: 27px;
   height: 22px;
   background-image: url("../img/checkbox-on.svg");
+  background-position: center;
+  border: 0;
+  left: -39px;
+}
+
+.housetype-checked:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 22px;
+  background-image: url("../img/checkbox-on-disabled.svg");
   background-position: center;
   border: 0;
   left: -39px;
@@ -837,6 +882,16 @@ ul.sorting-range-list {
   border-bottom: 0.5px gray dashed;
 }
 
+.sorting-range-list a:hover {
+  color: #81b3d2;
+  border-bottom: 0.5px #81b3d2 dashed;
+}
+
+.sorting-range-list a:active {
+  color: #000000;
+  border: 0;
+}
+
 a.active {
   color: #81b3d2;
   border-bottom: 0;
@@ -890,12 +945,6 @@ ul.sorting-ab-list {
   padding: 0;
 }
 
-.hotel-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .catalog-item {
   padding-left: 72px;
   padding-right: 72px;
@@ -903,48 +952,40 @@ ul.sorting-ab-list {
   padding-bottom: 29px;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
-  align-items: flex-start;
 }
 
 .hotel-card {
   display: flex;
   margin: 0;
   padding: 0;
-  align-items: flex-start;
 }
 
 .hotel-image {
-  width: 175px;
+  width: 135px;
   height: 90px;
+  margin-right: 30px;
 }
 
 
 .rating-block {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  width: 120px;
+  justify-content: flex-end;
+}
+
+.block {
+  margin-right: 521px;
 }
 
 .hotel-name {
   color: #000000;
-}
-
-.block h3 {
   padding: 0;
   margin: 0;
   font-size: 21px;
-  line-height: 26px;
-  text-align: left;
-  width: 771px;
+  line-height: 20px;
   letter-spacing: 0.2px;
-  margin-top: -5px;
-  margin-bottom: 10px;
-}
-
-a.hotel-name {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  margin-bottom: 9px;
 }
 
 .hotel-name:hover {
@@ -958,7 +999,6 @@ a.hotel-name {
 .hotel-type {
   margin: 0;
   padding: 0;
-  width: 771px;
   display: flex;
   margin-bottom: 13px;
 }
@@ -970,9 +1010,11 @@ a.hotel-name {
   color: #000000;
   margin: 0;
   padding: 0;
-  width: 109px;
+  width: 110px;
   margin-right: 7px;
 }
+
+
 
 .hotel-rating span {
   font-size: 14px;
@@ -994,12 +1036,8 @@ ul.hotel-star {
   margin-bottom: 37px;
 }
 
-.hotel-star li{
-  margin-left: 4px;
-}
-
-.hotel-order {
-  width: 771px;
+.hotel-star li {
+  margin-left: 5px;
 }
 
 .button-order {
@@ -1039,27 +1077,23 @@ ul.hotel-star {
 
 .main-footer {
   color: #000000;
-  background-color: #ffffff;
+  background-color: #fefefe;
   display: flex;
+  flex-wrap: wrap;
+  position: static;
   justify-content: space-between;
-  width: 1200px;
-  box-sizing: border-box;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 35px;
-  padding-left: 130px;
-  padding-right: 101px;
   align-items: center;
 }
 
 .footer-index {
   position: absolute;
-  z-index: 10;
   opacity: 0.9;
   bottom:0px;
   padding-top: 31px;
   padding-bottom: 50px;
-  padding-left: 130px;
-  padding-right: 101px;
 }
 
 .footer-contacts {
@@ -1067,7 +1101,10 @@ ul.hotel-star {
   font-style: normal;
   line-height: 26px;
   margin: 0;
-  padding-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
 }
 
 .social-button img {
@@ -1079,15 +1116,18 @@ ul.hotel-star {
 .footer-social {
   list-style: none;
   margin: 0;
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  margin-left: 43px;
 }
 
 .footer-social li {
@@ -1109,15 +1149,21 @@ ul.hotel-star {
   background-color: #669ec0;
 }
 
+.social-button:active path {
+  fill: #88b6d1;
+}
+
 .social-button:active {
-  background-color: #5496bd
+  background-color: #5496bd;
 }
 
 .footer-copyright {
   display: flex;
+  width: 400px;
   margin: 0;
   padding: 0;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-copyright b {
@@ -1140,30 +1186,3 @@ ul.hotel-star {
 .footer-copyright:active path {
   fill: #bdbbbc;
 }
-
-
-У тебя в футере дублируются полностью стили. на индексе он должен просто быть с позишин, на 2ой с позишин статик. не нужно дублировать все стили !
-
-что нужно сделать для футера.
-1.  убрать отступ слева и справа, всем элементам внтури него (их у нас 3) дать ширину по 400 пх и самому футеру дать вот так
-background-color: rgba(249,250,246,0.9);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    width: 100%;
-
-во всех его елемнта тоже флексы и выравнить их содержимое по центру
-
-в отелях всё плохо. куча стилей абы как. откуда ширина 771 ??? зачем?
-http://skrinshoter.ru/s/020319/WYqwGo3m?a
-
-я убрал все твои 771пикселей и просто давбил родителю маргин-райт и всё.
-http://skrinshoter.ru/s/020319/IgZ8Xdzu?a
-
-В заголовке отеля убери тег заголовка, оставь просто ссылку и не надо будет делать никаких отрицательных маргинов.
-в блоке фотки отеля у тебя блок ширине чем картинка. это плохо. он должен быть такой-же как картинка, но просто иметь отступ справа
-
-выполни это пожалуйста
