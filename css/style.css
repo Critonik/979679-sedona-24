@@ -784,7 +784,6 @@ a.active-page {
   position: relative;
   height: 36px;
   margin-bottom: 20px;
-  font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
