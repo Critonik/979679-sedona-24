@@ -136,7 +136,7 @@ a.active-page {
   left:0;
   right:0;
   bottom: 0;
-  height: 59px;
+  height: 55px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -915,7 +915,7 @@ a.active-page {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  margin-right: 477px;
+  margin-right: auto;
 }
 
 .sorting-range span {
@@ -992,6 +992,14 @@ ul.sorting-ab-list {
   cursor: pointer;
 }
 
+.icon-up-dir:hover path {
+  fill: #231f20;
+}
+
+.icon-up-dir:active path {
+  fill: #81b3d2;
+}
+
 .icon-up-dir {
   margin-right: 10px;
 }
@@ -1005,6 +1013,14 @@ ul.sorting-ab-list {
   width: 10px;
   height: 11px;
   cursor: pointer;
+}
+
+.icon-down-dir:hover path {
+  fill: #231f20;
+}
+
+.icon-down-dir:active path {
+  fill: #81b3d2;
 }
 
 .hotels ul {
@@ -1030,6 +1046,7 @@ ul.sorting-ab-list {
   display: flex;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .hotel-image {
@@ -1051,7 +1068,7 @@ ul.sorting-ab-list {
 }
 
 .block {
-  margin-right: 521px;
+  margin-right: auto;
 }
 
 .hotel-name {
