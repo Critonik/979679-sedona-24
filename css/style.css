@@ -113,7 +113,11 @@ a.active-page {
   pointer-events: none;
 }
 
-.splash{
+a.active-page:hover {
+  color: #766357;
+}
+
+.splash {
   background-image: url("../img/bg.jpg");
   background-color: #88b7d5;
   height: 509px;
@@ -127,7 +131,7 @@ a.active-page {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  background-position-y:-95px;
+  background-position-y:-85px;
 }
 
 .splash::after {
@@ -136,10 +140,10 @@ a.active-page {
   left:0;
   right:0;
   bottom: 0;
-  height: 55px;
+  height: 57px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1240px;
   background-image: url("../img/mask.svg");
 }
 
@@ -804,8 +808,8 @@ a.active-page {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 21px;
+  vertical-align: sub;
   cursor: pointer;
 }
 
