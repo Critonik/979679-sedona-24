@@ -10,11 +10,11 @@
   <body>
     <div class="center">
       <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation" aria-label="Навигация по сайту">
           <a class="main-logo">
             <img src="img/logo.svg" width="140" height="71" alt="City of Sedona">
           </a>
-          <ul class="site-navigation" aria-label="Навигация по сайту">
+          <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
             <li><a href="media.html">Фото и видео</a></li>
             <li><a href="mapofstate.html">Карта штата</a></li>
@@ -33,8 +33,8 @@
         </section>
         <section class="features">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="features-list">
-            <li class="feature-item" aria-label="Список преимуществ">
+          <ul class="features-list" aria-label="Список преимуществ">
+            <li class="feature-item">
               <div class="feature-item-description special-color">
                 <h3>Настоящий<br> городок</h3>
                 <span class="feature-number">— №1 —</span>
@@ -111,12 +111,12 @@
           <div class="appointment-date">
            <div class="arrival" aria-label="Прибытие">
              <label for="appointment-date">Дата заезда:</label>
-             <input id="appointment-date" type="text" name="date" value="24 АПРЕЛЯ 2017" placeholder="" aria-label="Строка ввода даты заезда">
+             <input id="appointment-date" type="text" name="appointmentdate" value="24 АПРЕЛЯ 2017" placeholder="" aria-label="Строка ввода даты заезда">
              <button class="arrival-calendar" aria-label="Календарь для выбора даты заезда"></button>
            </div>
            <div class="departure">
             <label for="departure-date">Дата выезда:</label>
-            <input id="departure-date" type="text" name="date" value="4 ИЮЛЯ 2017" placeholder="" aria-label="Строка ввода даты выезда">
+            <input id="departure-date" type="text" name="departuredate" value="4 ИЮЛЯ 2017" placeholder="" aria-label="Строка ввода даты выезда">
             <button class="departure-calendar" aria-label="Календарь для выбора даты выезда"></button>
            </div>
           </div>
