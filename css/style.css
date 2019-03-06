@@ -143,7 +143,7 @@ a.active-page:hover {
   height: 57px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1240px;
+  background-size: 1200px;
   background-image: url("../img/mask.svg");
 }
 
@@ -384,6 +384,11 @@ a.active-page:hover {
   box-sizing: border-box;
   z-index: 10;
 }
+
+.appointment-form-close {
+  display: none;
+}
+
 
 .appointment-headline {
   font-size: 21px;
@@ -1309,10 +1314,9 @@ ul.hotel-star {
 
 .footer-copyright b {
   width: 74px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: normal;
   line-height: 26px;
-  margin-right: 9px;
 }
 
 .footer-copyright a {
