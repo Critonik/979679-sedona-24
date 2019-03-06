@@ -27,8 +27,8 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
         <section class="selection-block">
-        <form class="selection-form" action="#" method="post">
-          <div class="infrastructure">
+        <form class="selection-form" action="#" method="post" aria-label="Форма выбора дополнительных опций">
+          <div class="infrastructure" aria-label="Дополнительные услуги">
             <h2>Инфраструктура:</h2>
             <input class="infrastructure-checked" type="checkbox" name="pool" value="Бассейн" id="checkbox01" checked>
             <label for="checkbox01">Бассейн</label>
@@ -37,7 +37,7 @@
             <input class="infrastructure-checked" type="checkbox" name="wifi" value="Парковка" id="checkbox03">
             <label for="checkbox03">Wi-Fi</label>
           </div>
-          <div class="housetype">
+          <div class="housetype" aria-label="Выбор типа места проживания">
             <h2>Тип жилья:</h2>
             <input class="housetype-checked" type="checkbox" name="hotel" value="Гостиница" id="checkbox04" checked>
             <label for="checkbox04">Гостиница</label>
@@ -46,7 +46,7 @@
             <input class="housetype-checked" type="checkbox" name="apartments" value="Апартаменты" id="checkbox06" checked>
             <label for="checkbox06">Апартаменты</label>
           </div>
-        <div class="filter-range">
+        <div class="filter-range" aria-label="фильтра стоимости места проживания">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-controls">
               <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -66,10 +66,10 @@
       </section>
       <section class="sorting-block">
         <h2 class="visually-hidden">Сортировка</h2>
-        <div class="sorting-sum">
+        <div class="sorting-sum" aria-label="Результат поиска">
           <span>Найдено: 3</span>
         </div>
-        <div class="sorting-range">
+        <div class="sorting-range" aria-label="Выбор типа сортировки">
           <span>Сортировка:</span>
           <ul class="sorting-range-list">
             <li><a class="active">По цене</a></li>
@@ -77,7 +77,7 @@
             <li><a href="#">По рейтингу</a></li>
           </ul>
         </div>
-        <div class="sorting-ab">
+        <div class="sorting-ab" aria-label="Сортировка по возрастанию или убыванию">
           <ul class="sorting-ab-list">
             <li>
               <a href="#">
@@ -212,7 +212,7 @@
           </li>
         </ul>
       </div>
-      <p class="footer-copyright">
+      <p class="footer-copyright" aria-label="ссылка на студию-разработчика сайта">
         <b>WEBSITE BY</b>
         <a class="copyright" href="https://htmlacademy.ru" aria-label="Ссылка на сайт разработчика - HTML Academy">
           <svg xmlns="http://www.w3.org/2000/svg" width="114px" height="41px" data-name="Layer 1" viewBox="0 0 113 39">
