@@ -18,10 +18,9 @@ catch (err) {
 if (storage) {
   adultcount.value = storage;
   }
-  else {
+else {
   appointmentdate.focus();
   }
-
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
