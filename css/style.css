@@ -77,8 +77,8 @@ a {
   padding-left: 75px;
   padding-right: 75px;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .site-navigation li {
@@ -132,11 +132,11 @@ a.active-page:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   background-position-y:-85px;
 }
@@ -151,10 +151,9 @@ a.active-page:hover {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 1200px 1200px;
-          background-size: 1200px;
+  background-size: 1200px;
   background-image: url("../img/mask.svg");
 }
-
 
 .splash img {
   display: block;
@@ -225,7 +224,7 @@ a.active-page:hover {
 .feature-item-logo {
   width: 800px;
   -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/farm.jpg");
@@ -234,7 +233,7 @@ a.active-page:hover {
  .canyon-image {
   width: 800px;
   -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/canyon.jpg");
@@ -251,7 +250,7 @@ a.active-page:hover {
   color: #000000;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .city-feature {
@@ -286,7 +285,7 @@ a.active-page:hover {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   position: absolute;
   left:50%;
   -webkit-transform: translateX(-50%);
@@ -403,12 +402,12 @@ a.active-page:hover {
 .appointment-form-open {
   display: block;
   -webkit-animation: op 0.2s;
-          animation: op 0.2s;
+  animation: op 0.2s;
 }
 
 .appointment-form-error {
   -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 @-webkit-keyframes op {
@@ -451,7 +450,7 @@ a.active-page:hover {
   0%,
   100% {
     -webkit-transform: translateX(-286px);
-            transform: translateX(-286px);
+    transform: translateX(-286px);
   }
   10%,
   30%,
@@ -459,14 +458,14 @@ a.active-page:hover {
   70%,
   90% {
     -webkit-transform: translateX(-276px);
-            transform: translateX(-276px);
+    transform: translateX(-276px);
   }
   20%,
   40%,
   60%,
   80% {
     -webkit-transform: translateX(-296px);
-            transform: translateX(-296px);
+    transform: translateX(-296px);
   }
 }
 
@@ -474,7 +473,7 @@ a.active-page:hover {
   0%,
   100% {
     -webkit-transform: translateX(-286px);
-            transform: translateX(-286px);
+    transform: translateX(-286px);
   }
   10%,
   30%,
@@ -482,14 +481,14 @@ a.active-page:hover {
   70%,
   90% {
     -webkit-transform: translateX(-276px);
-            transform: translateX(-276px);
+    transform: translateX(-276px);
   }
   20%,
   40%,
   60%,
   80% {
     -webkit-transform: translateX(-296px);
-            transform: translateX(-296px);
+    transform: translateX(-296px);
   }
 }
 
@@ -603,7 +602,7 @@ a.active-page:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-          align-items: center;
+  align-items: center;
   margin-right: 47px;
 }
 
@@ -615,7 +614,7 @@ a.active-page:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-          align-items: center;
+  align-items: center;
 }
 
 .adult label {
@@ -723,7 +722,7 @@ a.active-page:hover {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-image: url("../img/map.jpg");
   position: relative;
   z-index: 0;
@@ -781,7 +780,7 @@ a.active-page:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 249px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -849,7 +848,7 @@ a.active-page:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 256px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

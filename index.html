@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/min.style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="center">
@@ -101,13 +101,12 @@
           <div class="appointment-headline">
             <a class="find" href="#">Поиск гостиницы в Седоне</a>
           </div>
-
         </section>
         <section>
           <h2 class="visually-hidden">
             Как до нас добраться
           </h2>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма поиска гостиниц">
+          <form class="appointment-form" method="post" aria-label="Форма поиска гостиниц">
           <div class="appointment-date">
            <div class="arrival" aria-label="Прибытие">
              <label for="appointment-date">Дата заезда:</label>
@@ -134,7 +133,7 @@
               <button class="counter-plus" type="button" aria-label="Кнопка плюс"></button>
           </div>
          </div>
-         <button class="button" type="submit" aria-label="Кнопка найти">НАЙТИ</button>
+         <button class="button" action="https://echo.htmlacademy.ru" type="submit" aria-label="Кнопка найти">НАЙТИ</button>
         </form>
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36508.14812600309!2d-111.74960878063541!3d34.86047077080798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1550860973392" width="1200" height="595" style="border:0" allowfullscreen></iframe>
         </section>
@@ -179,6 +178,6 @@
         </p>
       </footer>
     </div>
-    <script src="js/min.script.js"> </script>
+    <script src="js/script.js"> </script>
   </body>
 </html>
