@@ -95,6 +95,10 @@ a {
   padding-right: 30px;
 }
 
+.site-navigation li:nth-child(3n) {
+  margin-left: auto;
+}
+
 .site-navigation li:nth-child(4) {
   text-align: right;
 }
