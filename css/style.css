@@ -530,6 +530,14 @@ a.active-page:hover {
   text-align: left;
 }
 
+.arrival {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  min-width: 100%
+  overflow: auto;
+}
+
 .arrival input {
   margin: 0;
   font-size: 14px;
@@ -539,7 +547,6 @@ a.active-page:hover {
   border:0;
   height: 35px;
   padding-left: 15px;
-  margin-bottom: 32px;
   width: 346px;
 }
 
@@ -553,8 +560,16 @@ a.active-page:hover {
 }
 
 .arrival label {
-  margin-right: 21px;
+  margin-right: 24px;
   letter-spacing: 0.1px;
+}
+
+.departure {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  min-width: 100%
+  overflow: auto;
 }
 
 .departure input {
@@ -567,7 +582,6 @@ a.active-page:hover {
   height: 35px;
   width: 346px;
   padding-left: 15px;
-  margin-bottom: 32px;
 }
 
 .departure input:hover {
@@ -580,7 +594,7 @@ a.active-page:hover {
 }
 
 .departure label {
-  margin-right: 18px;
+  margin-right: 22px;
 }
 
 .people-amount {
