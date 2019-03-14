@@ -390,7 +390,7 @@ a.active-page:hover {
 .appointment p {
   font-size: 14px;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 25px;
   text-align: center;
   color: #333333;
   background-color: #ffffff;
@@ -901,8 +901,8 @@ a.active-page:hover {
 .infrastructure-checked + label::before {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -913,8 +913,8 @@ a.active-page:hover {
 .infrastructure-checked:disabled + label::before {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -925,8 +925,8 @@ a.active-page:hover {
 .infrastructure-checked:checked + label::before {
   content: "";
   position: absolute;
-  width: 28px;
-  height: 24px;
+  width: 27px;
+  height: 25px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -938,8 +938,8 @@ a.active-page:hover {
   color: #686869;
   content: "";
   position: absolute;
-  width: 28px;
-  height: 24px;
+  width: 27px;
+  height: 25px;
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -973,8 +973,8 @@ a.active-page:hover {
 .housetype-checked + label::before {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -985,8 +985,8 @@ a.active-page:hover {
 .housetype-checked:disabled + label::before {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -997,8 +997,8 @@ a.active-page:hover {
 .housetype-checked:checked + label::before {
   content: "";
   position: absolute;
-  width: 28px;
-  height: 24px;
+  width: 27px;
+  height: 25px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1009,8 +1009,8 @@ a.active-page:hover {
 .housetype-checked:checked:disabled + label::before {
   content: "";
   position: absolute;
-  width: 28px;
-  height: 24px;
+  width: 27px;
+  height: 25px;
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1063,7 +1063,7 @@ a.active-page:hover {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 21px;
   vertical-align: sub;
   cursor: pointer;
 }
@@ -1078,10 +1078,11 @@ a.active-page:hover {
 .price-controls input {
   width: 50px;
   min-width: 50px;
-  max-height: 15px;
+  max-height: 17px;
   margin: 0;
   color: inherit;
-  font: inherit;
+  font-size: 14px;
+  line-height: 16px;
   background-color:transparent;
   border: none;
   text-align: left;
