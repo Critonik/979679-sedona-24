@@ -1063,7 +1063,7 @@ a.active-page:hover {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 16px;
   vertical-align: sub;
   cursor: pointer;
 }
@@ -1078,7 +1078,7 @@ a.active-page:hover {
 .price-controls input {
   width: 50px;
   min-width: 50px;
-  max-height: 10px;
+  max-height: 15px;
   margin: 0;
   color: inherit;
   font: inherit;
