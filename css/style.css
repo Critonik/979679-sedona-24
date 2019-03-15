@@ -678,50 +678,16 @@ a.active-page:hover {
   color: #a9a9a9;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.counter-plus::before {
-  content: "";
-  width: 12px;
-  height: 3px;
-  background-color: #a9a9a9;
-  position: absolute;
-  background-position: center;
-  border: 0;
-  top: 19px;
-  left: 15px;
+.counter-plus:hover {
+  color: #000000;
 }
 
-.counter-plus::after {
-  content: "";
-  width: 12px;
-  height: 3.5px;
-  background-color: #a9a9a9;
-  position: absolute;
-  background-position: center;
-  border: 0;
-  top: 52%;
-  left: 53%;
-  -webkit-transform: translate(-50%, -50%) rotate(90deg);
-  -ms-transform: translate(-50%, -50%) rotate(90deg);
-  transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.counter-plus:hover::before {
-  background-color: #000000;
-}
-
-.counter-plus:hover::after {
-  background-color: #000000;
-}
-
-.counter-plus:active::before {
-  background-color: #81b3d2;
-}
-
-.counter-plus:active::after {
-  background-color: #81b3d2;
+.counter-plus:active {
+  color: #81b3d2;
 }
 
 .counter-minus {
@@ -733,30 +699,16 @@ a.active-page:hover {
   color: #a9a9a9;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  font-size: 26px;
+  font-weight: bold;
 }
 
-.counter-minus::before {
-  content: "";
-  width: 12px;
-  height: 3px;
-  background-color: #a9a9a9;
-  position: absolute;
-  background-position: center;
-  border: 0;
-  top: 50%;
-  left: 60%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.counter-minus:hover {
+  color: #000000;
 }
 
-.counter-minus:hover::before {
-  background-color: #000000;
-}
-
-.counter-minus:active::before {
-  background-color: #81b3d2;
+.counter-minus:active {
+  color: #81b3d2;
 }
 
 .arrival-calendar {
@@ -973,7 +925,7 @@ a.active-page:hover {
 .housetype-checked + label::before {
   content: "";
   position: absolute;
-  width: 25px;
+  width: 27px;
   height: 25px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -985,7 +937,7 @@ a.active-page:hover {
 .housetype-checked:disabled + label::before {
   content: "";
   position: absolute;
-  width: 25px;
+  width: 27px;
   height: 25px;
   background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;
@@ -997,7 +949,7 @@ a.active-page:hover {
 .housetype-checked:checked + label::before {
   content: "";
   position: absolute;
-  width: 27px;
+  width: 30px;
   height: 25px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -1009,7 +961,7 @@ a.active-page:hover {
 .housetype-checked:checked:disabled + label::before {
   content: "";
   position: absolute;
-  width: 27px;
+  width: 30px;
   height: 25px;
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
