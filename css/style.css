@@ -689,6 +689,12 @@ button.counter-plus {
   vertical-align: middle;
 }
 
+.counter-plus span {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
 .counter-plus:hover {
   color: #000000;
 }
@@ -715,6 +721,12 @@ button.counter-minus {
   font-size: 26px;
   font-weight: bold;
   vertical-align: middle;
+}
+
+.counter-minus span {
+  position: relative;
+  left: 0;
+  top: 0;
 }
 
 .counter-minus:hover {
@@ -830,7 +842,7 @@ button.counter-minus {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   position: relative;
 }
 
@@ -867,11 +879,11 @@ button.counter-minus {
 .infrastructure-checked + label::before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   border: 0;
   left: -39px;
 }
@@ -879,11 +891,11 @@ button.counter-minus {
 .infrastructure-checked:disabled + label::before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 23px;
   background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   border: 0;
   left: -39px;
 }
@@ -892,10 +904,10 @@ button.counter-minus {
   content: "";
   position: absolute;
   width: 27px;
-  height: 25px;
+  height: 24px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   border: 0;
   left: -39px;
 }
@@ -905,10 +917,10 @@ button.counter-minus {
   content: "";
   position: absolute;
   width: 27px;
-  height: 25px;
+  height: 24px;
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   border: 0;
   left: -39px;
 }
@@ -940,10 +952,10 @@ button.counter-minus {
   content: "";
   position: absolute;
   width: 27px;
-  height: 25px;
+  height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   border: 0;
   left: -40px;
 }
@@ -952,10 +964,10 @@ button.counter-minus {
   content: "";
   position: absolute;
   width: 27px;
-  height: 25px;
+  height: 23px;
   background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   border: 0;
   left: -40px;
 }
@@ -963,11 +975,11 @@ button.counter-minus {
 .housetype-checked:checked + label::before {
   content: "";
   position: absolute;
-  width: 30px;
-  height: 25px;
+  width: 27px;
+  height: 24px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   border: 0;
   left: -40px;
 }
@@ -975,11 +987,11 @@ button.counter-minus {
 .housetype-checked:checked:disabled + label::before {
   content: "";
   position: absolute;
-  width: 30px;
-  height: 25px;
+  width: 27px;
+  height: 24px;
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   border: 0;
   left: -40px;
 }
